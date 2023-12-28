@@ -24,6 +24,8 @@ humidity=$(echo $weather_info | jq -r '.main.humidity')
 wind_speed=$(echo $weather_info | jq -r '.wind.speed')
 feels_like_kelvin=$(echo $weather_data | jq -r '.main.feels_like')
 feels_like_celsius=$(kelvin_to_celsius $feels_like_kelvin)
+pressure=$(echo $weather_data | jq -r '.main.pressure')
+sea_level=$(echo $weather_data | jq -r '.main.sea_level')
 
 temp_min_celsius=$(kelvin_to_celsius $temp_min_kelvin)
 temp_max_celsius=$(kelvin_to_celsius $temp_max_kelvin)
@@ -34,7 +36,7 @@ echo "# <h1 align="center"><img height="50" src="images/cloud.png"> Daily Weathe
 echo -e "<h3 align="center">🕒 Indonesian Time(UTC +07:00): <u>$time</u> (🤖Automated)</h3>\n" >> README.md
 echo -e "<table align="center">" >> README.md
 echo -e "<tr>" >> README.md
-echo -e "<td align="center"><b>${city}</b><br><img src="images/thermometer.png" height="18"> <b>${temperature_celsius}°C</b><br><b>$condition</b></td>" >> README.md
+echo -e "<td align="center"><b>${city}</b><br><img src="images/thermometer.png" height="18"> <b>${temperature_celsius}°C</b><br><b>$condition</b><br>Feels Like (Celsius): ${feels_like_celsius}°C</td>" >> README.md
 echo -e "</tr>" >> README.md
 echo -e "<td>" >> README.md
 echo -e "<table>" >> README.md
@@ -49,7 +51,8 @@ echo -e "</tr>" >> README.md
 echo -e "</table>" >> README.md
 echo -e "</table>" >> README.md
 
-echo -e "Feels Like (Celsius): ${feels_like_celsius}°C" >> README.md
+echo -e "Pressure: ${pressure} hPa" >> README.md
+echo -e "Sea Level: ${sea_level} hPa" >> README.md
 
 git config --global user.email "action@github.com"
 git config --global user.name "GitHub Action"
