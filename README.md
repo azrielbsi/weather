@@ -1,11 +1,11 @@
-[Weather](https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&color=FFDA5D&center=true&vCenter=true&repeat=false&width=435&lines=Daily+Weather)
+# [Weather](https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&color=FFDA5D&center=true&vCenter=true&repeat=false&width=435&lines=Daily+Weather)
 
-This content is dynamically generated in Indonesian Time: 2023-12-28 22:57:30 WIB
+This content is dynamically generated in Indonesian Time: 2023-12-28 23:02:30 WIB
 
 
 Current Weather in Depok
 
-Temperature: 28.85 °C
+Temperature: 28.62 °C
 
 Condition: broken clouds
 
