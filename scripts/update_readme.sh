@@ -49,7 +49,7 @@ echo -e "</tr>" >> README.md
 echo -e "</table>" >> README.md
 echo -e "</table>" >> README.md
 
-echo -e "Feels Like: ${feels_like_celsius}°C" >> README.md
+echo -e "Feels Like (Celsius): ${feels_like_celsius}°C" >> README.md
 
 git config --global user.email "action@github.com"
 git config --global user.name "GitHub Action"
