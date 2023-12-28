@@ -1,5 +1,5 @@
 # <h1 align=center><img height=50 src=images/cloud.png> Daily Weather <img height=50 src=images/cloud.png></h1>
-<h3 align=center>🕒 Indonesian Time(UTC +07:00): <u>2023-12-29 00:17:38 WIB</u> (🤖Automated)</h3>
+<h3 align=center>🕒 Indonesian Time(UTC +07:00): <u>2023-12-29 00:18:37 WIB</u> (🤖Automated)</h3>
 
 <table align=center>
 <tr>
@@ -17,4 +17,4 @@
 </tr>
 </table>
 </table>
-Curah Hujan:  mm
+Feels Like: -273.15°C
