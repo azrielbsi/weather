@@ -27,7 +27,7 @@ temp_min_celsius=$(kelvin_to_celsius $temp_min_kelvin)
 temp_max_celsius=$(kelvin_to_celsius $temp_max_kelvin)
 
 echo "# My Project" > README.md
-echo -e "\nThis content is dynamically generated in Indonesian Time (IST): $time\n" >> README.md
+echo -e "\nThis content is dynamically generated in Indonesian Time: $time\n" >> README.md
 echo -e "\nCurrent Weather in $city:\nTemperature: $temperature_celsius °C\nCondition: $condition" >> README.md
 echo -e "Suhu Maksimum: ${temp_max_celsius}°C" >> README.md
 echo -e "Suhu Minimum: ${temp_min_celsius}°C" >> README.md
