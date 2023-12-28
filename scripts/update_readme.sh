@@ -10,7 +10,7 @@ kelvin_to_celsius() {
     echo "scale=2; $1 - 273.15" | bc
 }
 
-time=$(date +'%Y-%m-%d %H:%M:%S %Z')
+time=$(TZ='Asia/Jakarta' date +'%Y-%m-%d %H:%M:%S %Z')
 
 city="Depok"
 weather_info=$(curl -s "http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${OPENWEATHERMAP_API_KEY}")
