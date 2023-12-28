@@ -29,7 +29,7 @@ temp_max_celsius=$(kelvin_to_celsius $temp_max_kelvin)
 icon_url="http://openweathermap.org/img/w/${icon_code}.png"
 
 echo "# <h1 align="center">Daily Weather</h1>" > README.md
-echo -e "\nThis content is dynamically generated in Indonesian Time: $time\n" >> README.md
+echo -e "<h3 align="center">🕒 Updated at <u>$time</u> (🤖Automated)</h3>\n" >> README.md
 
 echo -e "\nThis content is dynamically generated in Indonesian Time: $time\n" >> README.md
 echo -e "\nCurrent Weather in $city\n\nTemperature: $temperature_celsius °C\n\nCondition: $condition\n" >> README.md
