@@ -19,7 +19,7 @@ def main():
     # Tulis data ke README.md
     with open("README.md", "w") as readme:
         readme.write("# Daily Weather\n\n")
-        # Tulis data cuaca ke README.md
+        readme.write(f"Weather in {city}:\n")
 
 if __name__ == "__main__":
     main()
