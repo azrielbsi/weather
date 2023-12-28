@@ -10,7 +10,7 @@ kelvin_to_celsius() {
     echo "scale=2; $1 - 273.15" | bc
 }
 
-indian_time=$(date +'%Y-%m-%d %H:%M:%S %Z')
+time=$(date +'%Y-%m-%d %H:%M:%S %Z')
 
 city="Depok"
 weather_info=$(curl -s "http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${OPENWEATHERMAP_API_KEY}")
@@ -20,7 +20,7 @@ temperature_celsius=$(kelvin_to_celsius $temperature_kelvin)
 condition=$(echo $weather_info | jq -r '.weather[0].description')
 
 echo "# My Project" > README.md
-echo -e "\nThis content is dynamically generated in Indonesian Time (IST): $indian_time\n" >> README.md
+echo -e "\nThis content is dynamically generated in Indonesian Time (IST): $time\n" >> README.md
 echo -e "\nCurrent Weather in $city:\nTemperature: $temperature_celsius °C\nCondition: $condition" >> README.md
 
 git config --global user.email "action@github.com"
