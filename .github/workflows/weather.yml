@@ -1,29 +1,29 @@
-name: Daily Weather Update
+name: Update README with Weather
 
 on:
-  workflow_dispatch:
   schedule:
-    - cron: '0 12 * * *'  # Ganti dengan waktu dan frekuensi yang diinginkan
+    - cron: '*/1 * * * *'
 
 jobs:
-  update_weather:
+  update-readme:
     runs-on: ubuntu-latest
-
     steps:
-      - name: Checkout Repository
-        uses: actions/checkout@v2
+    - name: Checkout code
+      uses: actions/checkout@v2
 
-      - name: Set up Python
-        uses: actions/setup-python@v2
-        with:
-          python-version: 3.x
+    - name: Set up Git
+      run: |
+        git config --global user.email "action@github.com"
+        git config --global user.name "GitHub Action"
 
-      - name: Install Dependencies
-        run: |
-          python -m pip install --upgrade pip
-          pip install requests
+    - name: Install curl and jq
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y curl jq
 
-      - name: Run Python Script
-        env:
-          OPENWEATHERMAP_API_KEY: ${{ secrets.OPENWEATHERMAP_API_KEY }}
-        run: python main.py  # Ganti dengan nama skrip Python Anda
+    - name: Run update script
+      run: |
+        bash scripts/update_readme.sh
+      env:
+        OPENWEATHERMAP_API_KEY: ${{ secrets.OPENWEATHERMAP_API_KEY }}
+        GITHUB_TOKEN: ${{ secrets.PAT_TOKEN }}
