@@ -17,7 +17,7 @@ weather_info=$(curl -s "http://api.openweathermap.org/data/2.5/weather?q=${city}
 temperature_kelvin=$(echo $weather_info | jq -r '.main.temp')
 temperature_celsius=$(kelvin_to_celsius $temperature_kelvin)
 condition=$(echo $weather_info | jq -r '.weather[0].description')
-icon_code=$(echo $weather_data | jq -r '.weather[0].icon')
+icon_code=$(echo $weather_data | jq -r '.weather.icon')
 temp_min_kelvin=$(echo $weather_info | jq -r '.main.temp_min')
 temp_max_kelvin=$(echo $weather_info | jq -r '.main.temp_max')
 humidity=$(echo $weather_info | jq -r '.main.humidity')
