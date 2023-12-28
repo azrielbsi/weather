@@ -20,7 +20,7 @@ temperature_celsius=$(kelvin_to_celsius $temperature_kelvin)
 condition=$(echo $weather_info | jq -r '.weather[0].description')
 
 echo "# My Project" > README.md
-echo -e "\nThis content is dynamically generated in Indian Time (IST): $indian_time\n" >> README.md
+echo -e "\nThis content is dynamically generated in Indonesian Time (IST): $indian_time\n" >> README.md
 echo -e "\nCurrent Weather in $city:\nTemperature: $temperature_celsius °C\nCondition: $condition" >> README.md
 
 git config --global user.email "action@github.com"
