@@ -31,7 +31,6 @@ icon_url="http://openweathermap.org/img/w/${icon_code}.png"
 echo "# My Project" > README.md
 echo -e "\nThis content is dynamically generated in Indonesian Time: $time\n" >> README.md
 echo -e "\nCurrent Weather in $city\n\nTemperature: $temperature_celsius °C\n\nCondition: $condition\n" >> README.md
-echo -e "<img src="/images/${condition}.png">°C\n" >> README.md
 echo -e "Suhu Maksimum: ${temp_max_celsius}°C\n" >> README.md
 echo -e "Suhu Minimum: ${temp_min_celsius}°C\n" >> README.md
 echo -e "Kelembaban: ${humidity}%\n" >> README.md
