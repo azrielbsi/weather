@@ -24,6 +24,9 @@ humidity=$(echo $weather_info | jq -r '.main.humidity')
 wind_speed=$(echo $weather_info | jq -r '.wind.speed')
 feels_like_kelvin=$(echo $weather_data | jq -r '.main.feels_like')
 feels_like_celsius=$(kelvin_to_celsius $feels_like_kelvin)
+sunrise_unix=$(echo $weather_data | jq -r '.sys.sunrise')
+sunset_unix=$(echo $weather_data | jq -r '.sys.sunset')
+
 sunrise_time=$(date -d @$sunrise_unix +'%H:%M:%S')
 sunset_time=$(date -d @$sunset_unix +'%H:%M:%S')
 
