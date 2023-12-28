@@ -1,15 +1,14 @@
 # <h1 align=center><img height=50 src=images/cloud.png> Daily Weather <img height=50 src=images/cloud.png></h1>
-<h3 align=center>🕒 Indonesian Time(UTC +07:00): <u>2023-12-28 23:39:22 WIB</u> (🤖Automated)</h3>
+<h3 align=center>🕒 Indonesian Time(UTC +07:00): <u>2023-12-28 23:43:21 WIB</u> (🤖Automated)</h3>
 
 <table align=center>
 <tr>
-<td align=center><b>Depok</b><br><b>28.50</b><br><b>scattered clouds</b></td>
 </tr>
 </table>
 
 Current Weather in Depok
 
-Temperature: 28.50 °C
+Temperature: 28.44 °C
 
 Condition: scattered clouds
 
