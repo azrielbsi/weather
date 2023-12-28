@@ -30,8 +30,12 @@ icon_url="http://openweathermap.org/img/w/${icon_code}.png"
 
 echo "# <h1 align="center"><img height="50" src="images/cloud.png"> Daily Weather <img height="50" src="images/cloud.png"></h1>" > README.md
 echo -e "<h3 align="center">🕒 Indonesian Time(UTC +07:00): <u>$time</u> (🤖Automated)</h3>\n" >> README.md
+echo -e "<table align="center">" >> README.md
+echo -e "<tr>" >> README.md
+echo -e "<td align="center"><b>${city}</b><br><b>$temperature_celsius</b><br><b>$condition</b></td>" >> README.md
+echo -e "</tr>" >> README.md
+echo -e "</table>" >> README.md
 
-echo -e "\nThis content is dynamically generated in Indonesian Time: $time\n" >> README.md
 echo -e "\nCurrent Weather in $city\n\nTemperature: $temperature_celsius °C\n\nCondition: $condition\n" >> README.md
 echo -e "Suhu Maksimum: ${temp_max_celsius}°C\n" >> README.md
 echo -e "Suhu Minimum: ${temp_min_celsius}°C\n" >> README.md
