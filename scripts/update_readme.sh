@@ -24,8 +24,8 @@ humidity=$(echo $weather_info | jq -r '.main.humidity')
 wind_speed=$(echo $weather_info | jq -r '.wind.speed')
 feels_like_kelvin=$(echo $weather_data | jq -r '.main.feels_like')
 feels_like_celsius=$(kelvin_to_celsius $feels_like_kelvin)
-pressure=$(echo $weather_data | jq -r '.main.pressure')
-sea_level=$(echo $weather_data | jq -r '.main.sea_level')
+sunrise_time=$(date -d @$sunrise_unix +'%H:%M:%S')
+sunset_time=$(date -d @$sunset_unix +'%H:%M:%S')
 
 temp_min_celsius=$(kelvin_to_celsius $temp_min_kelvin)
 temp_max_celsius=$(kelvin_to_celsius $temp_max_kelvin)
@@ -51,8 +51,8 @@ echo -e "</tr>" >> README.md
 echo -e "</table>" >> README.md
 echo -e "</table>" >> README.md
 
-echo -e "Pressure: ${pressure} hPa" >> README.md
-echo -e "Sea Level: ${sea_level} hPa" >> README.md
+echo -e "Sunrise: ${sunrise_time}" >> README.md
+echo -e "Sunset: ${sunset_time}" >> README.md
 
 git config --global user.email "action@github.com"
 git config --global user.name "GitHub Action"
