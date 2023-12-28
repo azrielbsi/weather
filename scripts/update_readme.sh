@@ -49,10 +49,6 @@ echo -e "</tr>" >> README.md
 echo -e "</table>" >> README.md
 echo -e "</table>" >> README.md
 
-echo -e "## 📄 License" >> README.md
-echo -e "- Powered by: [Daily-Weather](https://github.com/Julius-Ulee/Daily-Weather)" >> README.md
-echo -e "- Code: [MIT](./LICENSE) © [JuliusUlee](https://julius-ulee.github.io/)" >> README.md
-
 git config --global user.email "action@github.com"
 git config --global user.name "GitHub Action"
 
