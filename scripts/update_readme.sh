@@ -37,16 +37,15 @@ echo -e "</tr>" >> README.md
 echo -e "<td>" >> README.md
 echo -e "<table>" >> README.md
 echo -e "<tr>" >> README.md
-echo -e "<td><img src="images/fast.png" height="18"> Minimum Temperature: <b>${temp_max_celsius}°C</b></td>" >> README.md
-echo -e "<td><img src="images/fast.png" height="18"> Maximum Temperature: <b>${temp_min_celsius}°C</b></td>" >> README.md
+echo -e "<td><img src="images/fast.png" height="18"> Minimum Temperature: <b>${temp_min_celsius}°C</b></td>" >> README.md
+echo -e "<td><img src="images/fast.png" height="18"> Maximum Temperature: <b>${temp_max_celsius}°C</b></td>" >> README.md
+echo -e "</tr>" >> README.md
+echo -e "<tr>" >> README.md
+echo -e "<td><img src="images/humidity.png" height="18"> Humidity: <b>${humidity}%</b></td>" >> README.md
+echo -e "<td><img src="images/air-flow.png" height="18"> Wind Speed: <b>${wind_speed} m/s</b></td>" >> README.md
 echo -e "</tr>" >> README.md
 echo -e "</table>" >> README.md
 echo -e "</table>" >> README.md
-
-echo -e "Suhu Maksimum: ${temp_max_celsius}°C\n" >> README.md
-echo -e "Suhu Minimum: ${temp_min_celsius}°C\n" >> README.md
-echo -e "Kelembaban: ${humidity}%\n" >> README.md
-echo -e "Kecepatan Angin: ${wind_speed} m/s\n" >> README.md
 
 git config --global user.email "action@github.com"
 git config --global user.name "GitHub Action"
