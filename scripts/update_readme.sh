@@ -32,7 +32,7 @@ echo "# <h1 align="center"><img height="50" src="images/cloud.png"> Daily Weathe
 echo -e "<h3 align="center">🕒 Indonesian Time(UTC +07:00): <u>$time</u> (🤖Automated)</h3>\n" >> README.md
 echo -e "<table align="center">" >> README.md
 echo -e "<tr>" >> README.md
-echo -e "<td align="center"><b>${city}</b><br><img src="imgae/thermometer.png" height="18"> <b>$temperature_celsius °C</b><br><b>$condition</b></td>" >> README.md
+echo -e "<td align="center"><b>${city}</b><br><img src="images/thermometer.png" height="18"> <b>$temperature_celsius °C</b><br><b>$condition</b></td>" >> README.md
 echo -e "</tr>" >> README.md
 echo -e "</table>" >> README.md
 
