@@ -1,6 +1,7 @@
 name: Daily Weather Update
 
 on:
+  workflow_dispatch:
   schedule:
     - cron: '0 12 * * *'  # Ganti dengan waktu dan frekuensi yang diinginkan
 
