@@ -22,6 +22,7 @@ temp_min_kelvin=$(echo $weather_info | jq -r '.main.temp_min')
 temp_max_kelvin=$(echo $weather_info | jq -r '.main.temp_max')
 humidity=$(echo $weather_info | jq -r '.main.humidity')
 wind_speed=$(echo $weather_info | jq -r '.wind.speed')
+precipitation=$(echo $weather_data | jq -r '.rain."1h" // .snow."1h" // 0')
 
 temp_min_celsius=$(kelvin_to_celsius $temp_min_kelvin)
 temp_max_celsius=$(kelvin_to_celsius $temp_max_kelvin)
@@ -46,6 +47,8 @@ echo -e "<td><img src="images/air-flow.png" height="18"> Wind Speed: <b>${wind_s
 echo -e "</tr>" >> README.md
 echo -e "</table>" >> README.md
 echo -e "</table>" >> README.md
+
+echo -e "Curah Hujan: ${precipitation} mm" >> README.md
 
 git config --global user.email "action@github.com"
 git config --global user.name "GitHub Action"
