@@ -49,11 +49,11 @@ echo -e "</tr>" >> README.md
 echo -e "</table>" >> README.md
 echo -e "</table>" >> README.md
 
-git config --global user.email "action@github.com"
-git config --global user.name "GitHub Action"
+git config --global user.email "19215261@bsi.ac.id"
+git config --global user.name "azrielbsi"
 
 git add README.md
-git commit -m "Update README with dynamic content"
+git commit -m "🐙Update README with dynamic content"
 git pull origin main
 
 git push origin main
