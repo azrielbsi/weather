@@ -30,11 +30,11 @@ icon_url="http://openweathermap.org/img/w/${icon_code}.png"
 
 echo "# My Project" > README.md
 echo -e "\nThis content is dynamically generated in Indonesian Time: $time\n" >> README.md
-echo -e "\nCurrent Weather in $city:\nTemperature: $temperature_celsius °C\nCondition: $condition\n" >> README.md
-echo -e "Suhu Maksimum: ${temp_max_celsius}°C" >> README.md
-echo -e "Suhu Minimum: ${temp_min_celsius}°C" >> README.md
-echo -e "Kelembaban: ${humidity}%" >> README.md
-echo -e "Kecepatan Angin: ${wind_speed} m/s" >> README.md
+echo -e "\nCurrent Weather in $city:\n\nTemperature: $temperature_celsius °C\n\nCondition: $condition" >> README.md
+echo -e "Suhu Maksimum: ${temp_max_celsius}°C\n" >> README.md
+echo -e "Suhu Minimum: ${temp_min_celsius}°C\n" >> README.md
+echo -e "Kelembaban: ${humidity}%\n" >> README.md
+echo -e "Kecepatan Angin: ${wind_speed} m/s\n" >> README.md
 
 git config --global user.email "action@github.com"
 git config --global user.name "GitHub Action"
