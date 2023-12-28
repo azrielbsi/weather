@@ -1,12 +1,12 @@
 # My Project
 
-This content is dynamically generated in Indonesian Time: 2023-12-28 18:45:04 WIB
+This content is dynamically generated in Indonesian Time: 2023-12-28 18:46:49 WIB
 
 
-Current Weather in :
-Temperature: -273.15 °C
-Condition: null
-Suhu Maksimum: -273.15°C
-Suhu Minimum: -273.15°C
-Kelembaban: null%
-Kecepatan Angin: null m/s
+Current Weather in Depok:
+Temperature: 30.19 °C
+Condition: haze
+Suhu Maksimum: 30.52°C
+Suhu Minimum: 29.45°C
+Kelembaban: 84%
+Kecepatan Angin: 2.57 m/s
