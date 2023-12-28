@@ -11,6 +11,7 @@ kelvin_to_celsius() {
 }
 
 time=$(date +'%Y-%m-%d %H:%M:%S %Z')
+city=${CITY}
 weather_info=$(curl -s "http://api.openweathermap.org/data/2.5/weather?q=${CITY}&appid=${OPENWEATHERMAP_API_KEY}")
 
 temperature_kelvin=$(echo $weather_info | jq -r '.main.temp')
