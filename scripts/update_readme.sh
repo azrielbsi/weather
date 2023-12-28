@@ -32,11 +32,17 @@ echo "# <h1 align="center"><img height="50" src="images/cloud.png"> Daily Weathe
 echo -e "<h3 align="center">🕒 Indonesian Time(UTC +07:00): <u>$time</u> (🤖Automated)</h3>\n" >> README.md
 echo -e "<table align="center">" >> README.md
 echo -e "<tr>" >> README.md
-echo -e "<td align="center"><b>${city}</b><br><img src="images/thermometer.png" height="18"> <b>$temperature_celsius °C</b><br><b>$condition</b></td>" >> README.md
+echo -e "<td align="center"><b>${city}</b><br><img src="images/thermometer.png" height="18"> <b>${temperature_celsius}°C</b><br><b>$condition</b></td>" >> README.md
+echo -e "</tr>" >> README.md
+echo -e "<td>" >> README.md
+echo -e "<table>" >> README.md
+echo -e "<tr>" >> README.md
+echo -e "<td><img src="images/fast.png" height="18"> Minimum Temperature: <b>${temp_max_celsius}°C</b></td>" >> README.md
+echo -e "<td><img src="images/fast.png" height="18"> Maximum Temperature: <b>${temp_min_celsius}°C</b></td>" >> README.md
 echo -e "</tr>" >> README.md
 echo -e "</table>" >> README.md
+echo -e "</table>" >> README.md
 
-echo -e "\nCurrent Weather in $city\n\nTemperature: $temperature_celsius °C\n\nCondition: $condition\n" >> README.md
 echo -e "Suhu Maksimum: ${temp_max_celsius}°C\n" >> README.md
 echo -e "Suhu Minimum: ${temp_min_celsius}°C\n" >> README.md
 echo -e "Kelembaban: ${humidity}%\n" >> README.md
