@@ -28,7 +28,7 @@ temp_max_celsius=$(kelvin_to_celsius $temp_max_kelvin)
 
 icon_url="http://openweathermap.org/img/w/${icon_code}.png"
 
-echo "# [Weather](https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&color=FFDA5D&center=true&vCenter=true&repeat=false&width=435&lines=Daily+Weather)" > README.md
+echo "# <h1 align="center">Daily Weather</h1>" > README.md
 echo -e "\nThis content is dynamically generated in Indonesian Time: $time\n" >> README.md
 echo -e "\nCurrent Weather in $city\n\nTemperature: $temperature_celsius °C\n\nCondition: $condition\n" >> README.md
 echo -e "Suhu Maksimum: ${temp_max_celsius}°C\n" >> README.md
