@@ -35,7 +35,7 @@ pressure=$(echo "$weather_info" | jq -r '.main.pressure')
 visibility=$(echo "$weather_info" | jq -r '.visibility')
 wind_deg=$(echo "$weather_info" | jq -r '.wind.deg')
 gust_speed=$(echo "$weather_info" | jq -r '.wind.gust // empty')
-wind_speed=$(echo $weather_info | jq -r '.wind.speed')
+wind_speed=$(echo $weather_info | jq -r '.wind.speed // empty')
 
 temp_min_celsius=$(kelvin_to_celsius ${temp_min_kelvin:-0})
 temp_max_celsius=$(kelvin_to_celsius ${temp_max_kelvin:-0})
