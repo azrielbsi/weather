@@ -44,29 +44,29 @@ echo "# <h1 align="center"><img height="40" src="images/cloud.png"> Daily Weathe
 echo -e "<h3 align="center">🕒 Indonesian Time(UTC$(printf "%+.2f" "$(bc <<< "scale=2; $timezone / 3600")")): <u>$time</u> (🤖Automated)</h3>\n" >> README.md
 echo -e "<table align="center">" >> README.md
 echo -e "<tr>" >> README.md
-echo -e "<td align="center"><b>${city}</b><br><img src="images/thermometer.png" height="18"> <b>${temperature_celsius}°C</b><br><img src='${icon_url}' height='70'><br><b>$condition</b><br><b>Feels Like: ${feels_like_celsius}°C</b></td>" >> README.md
+echo -e "<td align="center"><b>${city}</b><br><img src="images/thermometer.png" height="18"> <b>${temperature_celsius}°C</b><br><img src='${icon_url}' height='50'><br><b>$condition</b><br><b>Feels Like: ${feels_like_celsius}°C</b></td>" >> README.md
 echo -e "</tr>" >> README.md
 echo -e "<td>" >> README.md
 echo -e "<table>" >> README.md
 echo -e "<tr>" >> README.md
-echo -e "<td align="center"><img src="images/fast.png" height="40"><br>Minimum Temperature: <b>${temp_min_celsius}°C</b></td>" >> README.md
-echo -e "<td align="center"><img src="images/fast.png" height="40"><br>Maximum Temperature: <b>${temp_max_celsius}°C</b></td>" >> README.md
+echo -e "<td align="center"><img src="images/fast.png" height="25"><br>Minimum Temperature: <b>${temp_min_celsius}°C</b></td>" >> README.md
+echo -e "<td align="center"><img src="images/fast.png" height="25"><br>Maximum Temperature: <b>${temp_max_celsius}°C</b></td>" >> README.md
 echo -e "</tr>" >> README.md
 echo -e "<tr>" >> README.md
-echo -e "<td align="center"><img src="images/humidity.png" height="40"><br>Humidity: <b>${humidity}%</b></td>" >> README.md
-echo -e "<td align="center"><img src="images/atmospheric.png" height="40"><br>Pressure: <b>${pressure} hPa</b></td>" >> README.md
+echo -e "<td align="center"><img src="images/humidity.png" height="25"><br>Humidity: <b>${humidity}%</b></td>" >> README.md
+echo -e "<td align="center"><img src="images/atmospheric.png" height="25"><br>Pressure: <b>${pressure} hPa</b></td>" >> README.md
 echo -e "</tr>" >> README.md
 echo -e "<tr>" >> README.md
-echo -e "<td align="center"><img src="images/air-flow.png" height="40"><br>Wind Speed: <b>${wind_speed} m/s</b></td>" >> README.md
-echo -e "<td align="center"><img src="images/anemometer.png" height="40"><br>Wind Direction: <b>${wind_deg}°</b></td>" >> README.md
+echo -e "<td align="center"><img src="images/air-flow.png" height="25"><br>Wind Speed: <b>${wind_speed} m/s</b></td>" >> README.md
+echo -e "<td align="center"><img src="images/anemometer.png" height="25"><br>Wind Direction: <b>${wind_deg}°</b></td>" >> README.md
 echo -e "</tr>" >> README.md
 echo -e "<tr>" >> README.md
-echo -e "<td align="center"><img src="images/cloudy.png" height="40"><br>Cloudiness: <b>${clouds}%</b></td>" >> README.md
-echo -e "<td align="center"><img src="images/low-visibility.png" height="40"><br>Visibility: <b>${visibility} meters</b></td>" >> README.md
+echo -e "<td align="center"><img src="images/cloudy.png" height="25"><br>Cloudiness: <b>${clouds}%</b></td>" >> README.md
+echo -e "<td align="center"><img src="images/low-visibility.png" height="25"><br>Visibility: <b>${visibility} meters</b></td>" >> README.md
 echo -e "</tr>" >> README.md
 echo -e "<tr>" >> README.md
-echo -e "<td align="center"><img src="images/sunrise.png" height="40"><br>Sunrise: <b>${sunrise_readable}</b></td>" >> README.md
-echo -e "<td align="center"><img src="images/sunsets.png" height="40"><br>Sunset: <b>${sunset_readable}</b></td>" >> README.md
+echo -e "<td align="center"><img src="images/sunrise.png" height="25"><br>Sunrise: <b>${sunrise_readable}</b></td>" >> README.md
+echo -e "<td align="center"><img src="images/sunsets.png" height="25"><br>Sunset: <b>${sunset_readable}</b></td>" >> README.md
 echo -e "</tr>" >> README.md
 echo -e "</table>" >> README.md
 echo -e "</table>" >> README.md
