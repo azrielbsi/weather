@@ -28,13 +28,14 @@ feels_like_celsius=$(kelvin_to_celsius $feels_like_kelvin)
 temp_min_celsius=$(kelvin_to_celsius $temp_min_kelvin)
 temp_max_celsius=$(kelvin_to_celsius $temp_max_kelvin)
 
-icon_url="http://openweathermap.org/img/w/${icon_code}.png"
+weather_icon=$(echo $weather_info | jq -r '.weather[0].icon')
+icon_url="https://openweathermap.org/img/w/${weather_icon}.png"
 
 echo "# <h1 align="center"><img height="40" src="images/cloud.png"> Daily Weather <img height="40" src="images/cloud.png"></h1>" > README.md
 echo -e "<h3 align="center">🕒 Indonesian Time(UTC +07:00): <u>$time</u> (🤖Automated)</h3>\n" >> README.md
 echo -e "<table align="center">" >> README.md
 echo -e "<tr>" >> README.md
-echo -e "<td align="center"><b>${city}</b><br><img src="images/thermometer.png" height="18"> <b>${temperature_celsius}°C</b><br><b>$condition</b><br>Feels Like (Celsius): ${feels_like_celsius}°C</td>" >> README.md
+echo -e "<td align="center"><b>${city}</b><br><img src="images/thermometer.png" height="18"> <b>${temperature_celsius}°C</b><br><img src='${icon_url}' height='40'><br><b>$condition</b><br>Feels Like (Celsius): ${feels_like_celsius}°C</td>" >> README.md
 echo -e "</tr>" >> README.md
 echo -e "<td>" >> README.md
 echo -e "<table>" >> README.md
