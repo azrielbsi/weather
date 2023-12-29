@@ -1,5 +1,5 @@
 # <h1 align=center><img height=40 src=images/cloud.png> Daily Weather <img height=40 src=images/cloud.png></h1>
-<h3 align=center>🕒 Indonesian Time(UTC +07:00): <u>2023-12-29 13:59:02 WIB</u> (🤖Automated)</h3>
+<h3 align=center>🕒 Indonesian Time(UTC +07:00): <u>2023-12-29 14:03:55 WIB</u> (🤖Automated)</h3>
 
 <table align=center>
 <tr>
@@ -16,7 +16,10 @@
 <td><img src=images/air-flow.png height=18> Wind Speed: <b>5.14 m/s</b></td>
 </tr>
 <tr>
-<td>1008 hPa</td>
+<td>Tekanan Udara: 1008 hPa</td>
+</tr>
+<tr>
+<td>Sea Level: null hPa</td>
 </tr>
 </table>
 </table>
