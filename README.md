@@ -1,5 +1,5 @@
 # <h1 align='center'><img height='40' src='images/cloud.png'> Daily Weather Report <img height='40' src='images/cloud.png'></h1>
-<h3 align='center'>🕒 Indonesian Time(UTC+7.00): <u>2023-12-30 05:19:35 WIB</u> (🤖Automated)</h3>
+<h3 align='center'>🕒 Indonesian Time(UTC+7.00): <u>2023-12-30 05:24:36 WIB</u> (🤖Automated)</h3>
 
 <table align='center'>
 <tr>
@@ -16,11 +16,11 @@
 <td align='center'><img src='images/atmospheric.png' height='25'><br>Atmospheric<br>Pressure:<br><b>1009 hPa</b></td>
 </tr>
 <tr>
-<td align='center'><img src='images/air-flow.png' height='25'><br>Wind Gust Speed:<br><b>N/A m/s</b></td>
-<td align='center'><img src='images/anemometer.png' height='25'><br>Wind Direction:<br><b>210°</b></td>
+<td align='center'><img src='images/air-flow.png' height='25'><br>Wind Gust Speed:<br><b>1.54/N/A m/s</b></td>
+<td align='center'><img src='images/anemometer.png' height='25'><br>Wind Direction:<br><b>180°</b></td>
 </tr>
 <tr>
-<td align='center'><img src='images/cloudy.png' height='25'><br>Cloudiness:<br><b>20%</b></td>
+<td align='center'><img src='images/cloudy.png' height='25'><br>Cloudiness:<br><b>40%</b></td>
 <td align='center'><img src='images/low-visibility.png' height='25'><br>Visibility:<br><b>3000 meters</b></td>
 </tr>
 <tr>
