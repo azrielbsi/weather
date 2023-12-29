@@ -49,16 +49,16 @@ echo -e "</tr>" >> README.md
 echo -e "<td>" >> README.md
 echo -e "<table>" >> README.md
 echo -e "<tr>" >> README.md
-echo -e "<td><img src="images/fast.png" height="18"> Minimum Temperature: <b>${temp_min_celsius}°C</b></td>" >> README.md
-echo -e "<td><img src="images/fast.png" height="18"> Maximum Temperature: <b>${temp_max_celsius}°C</b></td>" >> README.md
+echo -e "<td align="center"><img src="images/fast.png" height="40"> Minimum Temperature: <b>${temp_min_celsius}°C</b></td>" >> README.md
+echo -e "<td align="center"><img src="images/fast.png" height="40"> Maximum Temperature: <b>${temp_max_celsius}°C</b></td>" >> README.md
 echo -e "</tr>" >> README.md
 echo -e "<tr>" >> README.md
 echo -e "<td align="center"><img src="images/humidity.png" height="40"><br>Humidity: <b>${humidity}%</b></td>" >> README.md
-echo -e "<td><img src="images/atmospheric.png" height="18"> Pressure: ${pressure} hPa</td>" >> README.md
+echo -e "<td align="center"><img src="images/atmospheric.png" height="40"> Pressure: ${pressure} hPa</td>" >> README.md
 echo -e "</tr>" >> README.md
 echo -e "<tr>" >> README.md
-echo -e "<td><img src="images/air-flow.png" height="18"> Wind Speed: <b>${wind_speed} m/s</b></td>" >> README.md
-echo -e "<td><img src="images/anemometer.png" height="18"> Wind Direction: ${wind_deg}°</td>" >> README.md
+echo -e "<td align="center"><img src="images/air-flow.png" height="40"> Wind Speed: <b>${wind_speed} m/s</b></td>" >> README.md
+echo -e "<td align="center"><img src="images/anemometer.png" height="40"> Wind Direction: ${wind_deg}°</td>" >> README.md
 echo -e "</tr>" >> README.md
 echo -e "<tr>" >> README.md
 echo -e "<td>Cloudiness: ${clouds}%</td>" >> README.md
