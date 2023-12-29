@@ -34,6 +34,7 @@ temp_max_celsius=$(kelvin_to_celsius $temp_max_kelvin)
 weather_icon=$(echo $weather_info | jq -r '.weather[0].icon')
 icon_url="https://openweathermap.org/img/w/${weather_icon}.png"
 clouds=$(echo $weather_info | jq -r '.clouds.all')
+country_code=$(echo $weather_info | jq -r '.sys.country')
 
 echo "# <h1 align="center"><img height="40" src="images/cloud.png"> Daily Weather <img height="40" src="images/cloud.png"></h1>" > README.md
 echo -e "<h3 align="center">🕒 Indonesian Time(UTC +07:00): <u>$time</u> (🤖Automated)</h3>\n" >> README.md
@@ -53,13 +54,14 @@ echo -e "<td><img src="images/air-flow.png" height="18"> Wind Speed: <b>${wind_s
 echo -e "</tr>" >> README.md
 echo -e "<tr>" >> README.md
 echo -e "<td>Tekanan Udara: ${pressure} hPa</td>" >> README.md
-echo -e "<td>Derajat: ${wind_deg}</td>" >> README.md
+echo -e "<td>Wind Direction: ${wind_deg}°</td>" >> README.md
 echo -e "</tr>" >> README.md
 echo -e "<tr>" >> README.md
-echo -e "<td>Visibility: ${visibility}</td>" >> README.md
+echo -e "<td>Visibility: ${visibility} meters</td>" >> README.md
 echo -e "</tr>" >> README.md
 echo -e "<tr>" >> README.md
-echo -e "<td>Cloudiness: ${clouds}</td>" >> README.md
+echo -e "<td>Cloudiness: ${clouds}%</td>" >> README.md
+echo -e "<td>Country Code: ${country_code}" >> README.md
 echo -e "</tr>" >> README.md
 echo -e "</table>" >> README.md
 echo -e "</table>" >> README.md
