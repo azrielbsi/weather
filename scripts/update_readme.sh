@@ -40,7 +40,7 @@ sunset_unix=$(echo $weather_info | jq -r '.sys.sunset')
 sunrise_readable=$(date -d @$sunrise_unix +'%Y-%m-%d %H:%M:%S')
 sunset_readable=$(date -d @$sunset_unix +'%Y-%m-%d %H:%M:%S')
 timezone=$(echo $weather_info | jq -r '.timezone')
-forecast_info=$(curl -s "https://api.openweathermap.org/data/2.5/onecall?lat=44.34&lon=10.99&exclude=current,minutely,hourly&appid=${OPENWEATHERMAP_API_KEY}")
+forecast_info=$(curl -s "https://api.openweathermap.org/data/2.5/weather?lat=44.34&lon=10.99&appid=57632351a75bb6b4af946f2ddd2453f3")
 
 echo "# <h1 align="center"><img height="40" src="images/cloud.png"> Daily Weather Report <img height="40" src="images/cloud.png"></h1>" > README.md
 echo -e "<h3 align="center">🕒 Indonesian Time(UTC$(printf "%+.2f" "$(bc <<< "scale=2; $timezone / 3600")")): <u>$time</u> (🤖Automated)</h3>\n" >> README.md
