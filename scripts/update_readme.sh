@@ -53,7 +53,7 @@ echo -e "<td><img src="images/fast.png" height="18"> Minimum Temperature: <b>${t
 echo -e "<td><img src="images/fast.png" height="18"> Maximum Temperature: <b>${temp_max_celsius}°C</b></td>" >> README.md
 echo -e "</tr>" >> README.md
 echo -e "<tr>" >> README.md
-echo -e "<td><img src="images/humidity.png" height="18"> Humidity: <b>${humidity}%</b></td>" >> README.md
+echo -e "<td align="center"><img src="images/humidity.png" height="40"><br>Humidity: <b>${humidity}%</b></td>" >> README.md
 echo -e "<td><img src="images/atmospheric.png" height="18"> Pressure: ${pressure} hPa</td>" >> README.md
 echo -e "</tr>" >> README.md
 echo -e "<tr>" >> README.md
