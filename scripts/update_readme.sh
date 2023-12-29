@@ -33,7 +33,6 @@ feels_like_kelvin=$(echo "$weather_info" | jq -r '.main.feels_like')
 feels_like_celsius=$(kelvin_to_celsius $feels_like_kelvin)
 pressure=$(echo "$weather_info" | jq -r '.main.pressure')
 visibility=$(echo "$weather_info" | jq -r '.visibility')
-visibility_km=$(echo "scale=2; $visibility_meter / 1000" | bc)
 wind_deg=$(echo "$weather_info" | jq -r '.wind.deg')
 gust_speed=$(echo "$weather_info" | jq -r '.wind.gust // empty')
 wind_speed=$(echo $weather_info | jq -r '.wind.speed // empty')
@@ -74,7 +73,7 @@ echo -e "<td align='center'><img src='images/anemometer.png' height='25'><br>Win
 echo -e "</tr>" >> README.md
 echo -e "<tr>" >> README.md
 echo -e "<td align='center'><img src='images/cloudy.png' height='25'><br>Cloudiness:<br><b>${clouds:-N/A}%</b></td>" >> README.md
-echo -e "<td align='center'><img src='images/low-visibility.png' height='25'><br>Visibility:<br><b>${visibility_km} km</b></td>" >> README.md
+echo -e "<td align='center'><img src='images/low-visibility.png' height='25'><br>Visibility:<br><b>${visibility:-N/A} meters</b></td>" >> README.md
 echo -e "</tr>" >> README.md
 echo -e "<tr>" >> README.md
 echo -e "<td align='center'><img src='images/sunrise.png' height='25'><br>Sunrise:<br><b>${sunrise_readable:-N/A}</b></td>" >> README.md
