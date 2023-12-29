@@ -22,7 +22,7 @@ temp_min_kelvin=$(echo $weather_info | jq -r '.main.temp_min')
 temp_max_kelvin=$(echo $weather_info | jq -r '.main.temp_max')
 humidity=$(echo $weather_info | jq -r '.main.humidity')
 wind_speed=$(echo $weather_info | jq -r '.wind.speed')
-feels_like_kelvin=$(echo $weather_data | jq -r '.main.feels_like')
+feels_like_kelvin=$(echo $weather_info | jq -r '.main.feels_like')
 feels_like_celsius=$(kelvin_to_celsius $feels_like_kelvin)
 pressure=$(echo $weather_info | jq -r '.main.pressure')
 visibility=$(echo $weather_info | jq -r '.visibility')
@@ -43,7 +43,7 @@ echo "# <h1 align="center"><img height="40" src="images/cloud.png"> Daily Weathe
 echo -e "<h3 align="center">🕒 Indonesian Time(UTC +07:00): <u>$time</u> (🤖Automated)</h3>\n" >> README.md
 echo -e "<table align="center">" >> README.md
 echo -e "<tr>" >> README.md
-echo -e "<td align="center"><b>${city}</b><br><img src="images/thermometer.png" height="18"> <b>${temperature_celsius}°C</b><br><img src='${icon_url}' height='40'><br><b>$condition</b><br>Feels Like (Celsius): ${feels_like_celsius}°C</td>" >> README.md
+echo -e "<td align="center"><b>${city}</b><br><img src="images/thermometer.png" height="18"> <b>${temperature_celsius}°C</b><br><img src='${icon_url}' height='40'><br><b>$condition</b><br>Feels Like: ${feels_like_celsius}°C</td>" >> README.md
 echo -e "</tr>" >> README.md
 echo -e "<td>" >> README.md
 echo -e "<table>" >> README.md
