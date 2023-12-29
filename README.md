@@ -1,14 +1,14 @@
 # <h1 align='center'><img height='40' src='images/cloud.png'> Daily Weather Report <img height='40' src='images/cloud.png'></h1>
-<h3 align='center'>🕒 Indonesian Time(UTC+7.00): <u>2023-12-30 05:34:18 WIB</u> (🤖Automated)</h3>
+<h3 align='center'>🕒 Indonesian Time(UTC+7.00): <u>2023-12-30 05:41:03 WIB</u> (🤖Automated)</h3>
 
 <table align='center'>
 <tr>
-<td align='center'><b>Jakarta</b><br><b>Latitude: -6.2146 Longitude: 106.8451</b><br><img src='images/thermometer.png' height='18'> <b>26.00°C</b><br><img src='https://openweathermap.org/img/w/50n.png' height='50'><br><b>Haze</b><br><b>(haze)</b><br><b>Feels Like: 26.00°C</b></td>
+<td align='center'><b>Jakarta</b><br><b>Latitude: -6.2146 Longitude: 106.8451</b><br><img src='images/thermometer.png' height='18'> <b>26.34°C</b><br><img src='https://openweathermap.org/img/w/50d.png' height='50'><br><b>Haze</b><br><b>(haze)</b><br><b>Feels Like: 26.34°C</b></td>
 </tr>
 <td>
 <table>
 <tr>
-<td align='center'><img src='images/fast.png' height='25'><br>Minimum<br>Temperature:<br><b>24.94°C</b></td>
+<td align='center'><img src='images/fast.png' height='25'><br>Minimum<br>Temperature:<br><b>25.50°C</b></td>
 <td align='center'><img src='images/fast.png' height='25'><br>Maximum<br>Temperature:<br><b>29.18°C</b></td>
 </tr>
 <tr>
@@ -21,7 +21,7 @@
 </tr>
 <tr>
 <td align='center'><img src='images/cloudy.png' height='25'><br>Cloudiness:<br><b>40%</b></td>
-<td align='center'><img src='images/low-visibility.png' height='25'><br>Visibility:<br><b>3000 meters</b></td>
+<td align='center'><img src='images/low-visibility.png' height='25'><br>Visibility:<br><b>N/A km</b></td>
 </tr>
 <tr>
 <td align='center'><img src='images/sunrise.png' height='25'><br>Sunrise:<br><b>2023-12-30 05:40:18</b></td>
