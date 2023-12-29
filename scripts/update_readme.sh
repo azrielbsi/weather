@@ -65,8 +65,8 @@ echo -e "<td align="center"><img src="images/cloudy.png" height="40"><br>Cloudin
 echo -e "<td align="center"><img src="images/low-visibility.png" height="40"><br>Visibility: <b>${visibility} meters</b></td>" >> README.md
 echo -e "</tr>" >> README.md
 echo -e "<tr>" >> README.md
-echo -e "<td>Sunrise: ${sunrise_readable}</td>" >> README.md
-echo -e "<td>Sunset: ${sunset_readable}</td>" >> README.md
+echo -e "<td align="center"><img src="images/sunrise.png" height="40"><br>Sunrise: <b>${sunrise_readable}</b></td>" >> README.md
+echo -e "<td align="center"><img src="images/sunsets.png" height="40"><br>Sunset: <b>${sunset_readable}</b></td>" >> README.md
 echo -e "</tr>" >> README.md
 echo -e "</table>" >> README.md
 echo -e "</table>" >> README.md
