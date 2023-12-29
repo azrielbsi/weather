@@ -33,6 +33,7 @@ feels_like_celsius=$(kelvin_to_celsius $feels_like_kelvin)
 pressure=$(echo $weather_info | jq -r '.main.pressure')
 visibility=$(echo $weather_info | jq -r '.visibility')
 wind_deg=$(echo $weather_info | jq -r '.wind.deg')
+gust_speed=$(echo "$weather_info" | jq -r '.wind.gust')
 
 temp_min_celsius=$(kelvin_to_celsius $temp_min_kelvin)
 temp_max_celsius=$(kelvin_to_celsius $temp_max_kelvin)
@@ -81,7 +82,7 @@ echo -e "<tr>" >> README.md
 echo -e "<td colspan='2' align='center'><b>Coordinates:</b><br>Latitude: ${coord_lat}<br>Longitude: ${coord_lon}</td>" >> README.md
 echo -e "</tr>" >> README.md
 echo -e "<tr>" >> README.md
-echo -e "<td colspan='2' align='center'>Ground Level Pressure:<br><b>${grnd_level} hPa</b></td>" >> README.md
+echo -e "<td colspan='2' align='center'>Wind Gust Speed:<br><b>${gust_speed} m/s</b></td>" >> README.md
 echo -e "</tr>" >> README.md
 echo -e "</table>" >> README.md
 echo -e "</table>" >> README.md
