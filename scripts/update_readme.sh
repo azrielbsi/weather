@@ -40,7 +40,7 @@ sunset_unix=$(echo $weather_info | jq -r '.sys.sunset')
 sunrise_readable=$(date -d @$sunrise_unix +'%Y-%m-%d %H:%M:%S')
 sunset_readable=$(date -d @$sunset_unix +'%Y-%m-%d %H:%M:%S')
 timezone=$(echo $weather_info | jq -r '.timezone')
-rain_prob=$(echo $weather_info | jq -r '.rain')
+rain_volume=$(echo $weather_info | jq -r '.rain.1h')
 
 echo "# <h1 align="center"><img height="40" src="images/cloud.png"> Daily Weather Report <img height="40" src="images/cloud.png"></h1>" > README.md
 echo -e "<h3 align="center">🕒 Indonesian Time(UTC$(printf "%+.2f" "$(bc <<< "scale=2; $timezone / 3600")")): <u>$time</u> (🤖Automated)</h3>\n" >> README.md
@@ -71,7 +71,7 @@ echo -e "<td align="center"><img src="images/sunrise.png" height="25"><br>Sunris
 echo -e "<td align="center"><img src="images/sunsets.png" height="25"><br>Sunset:<br><b>${sunset_readable}</b></td>" >> README.md
 echo -e "</tr>" >> README.md
 echo -e "<tr>" >> README.md
-echo -e "<td align="center" colspan="2">Rain Probability: ${rain_prob}%</td>" >> README.md
+echo -e "<td align="center" colspan="2">Rain Volume (1h): ${rain_volume} mm</td>" >> README.md
 echo -e "</tr>" >> README.md
 echo -e "</table>" >> README.md
 echo -e "</table>" >> README.md
