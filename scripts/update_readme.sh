@@ -14,6 +14,11 @@ time=$(date +'%Y-%m-%d %H:%M:%S %Z')
 city="Depok"
 weather_info=$(curl -s "http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${OPENWEATHERMAP_API_KEY}")
 
+latitude=$(echo "$weather_info" | jq -r '.coord.lat')
+longitude=$(echo "$weather_info" | jq -r '.coord.lon')
+
+weather_info=$(curl -s "https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${OPENWEATHERMAP_API_KEY}")
+
 temperature_kelvin=$(echo $weather_info | jq -r '.main.temp')
 temperature_celsius=$(kelvin_to_celsius $temperature_kelvin)
 condition=$(echo $weather_info | jq -r '.weather[0].main')
