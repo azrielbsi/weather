@@ -71,7 +71,7 @@ echo -e "<td align="center"><img src="images/sunrise.png" height="25"><br>Sunris
 echo -e "<td align="center"><img src="images/sunsets.png" height="25"><br>Sunset:<br><b>${sunset_readable}</b></td>" >> README.md
 echo -e "</tr>" >> README.md
 echo -e "<tr>" >> README.md
-echo -e "<td align="center"><img src="images/rain.png" height="25"><br><b>Rain Volume: ${rain_volume} mm</b></td>" >> README.md
+echo -e "<td colspan="2" align="center"><img src="images/rain.png" height="25"><br>Rain Volume: <br><b>${rain_volume} mm</b></td>" >> README.md
 echo -e "</tr>" >> README.md
 echo -e "</table>" >> README.md
 echo -e "</table>" >> README.md
