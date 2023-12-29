@@ -1,5 +1,5 @@
 # <h1 align='center'><img height='40' src='images/cloud.png'> Daily Weather Report <img height='40' src='images/cloud.png'></h1>
-<h3 align='center'>🕒 Indonesian Time(UTC+7.00): <u>2023-12-30 05:46:33 WIB</u> (🤖Automated)</h3>
+<h3 align='center'>🕒 Indonesian Time(UTC+7.00): <u>2023-12-30 05:48:04 WIB</u> (🤖Automated)</h3>
 
 <table align='center'>
 <tr>
@@ -21,7 +21,7 @@
 </tr>
 <tr>
 <td align='center'><img src='images/cloudy.png' height='25'><br>Cloudiness:<br><b>40%</b></td>
-<td align='center'><img src='images/low-visibility.png' height='25'><br>Visibility:<br><b> km</b></td>
+<td align='center'><img src='images/low-visibility.png' height='25'><br>Visibility:<br><b>3000 meters</b></td>
 </tr>
 <tr>
 <td align='center'><img src='images/sunrise.png' height='25'><br>Sunrise:<br><b>2023-12-30 05:40:18</b></td>
