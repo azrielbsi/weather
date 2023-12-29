@@ -11,7 +11,7 @@ kelvin_to_celsius() {
 }
 
 time=$(date +'%Y-%m-%d %H:%M:%S %Z')
-ip=$(curl -s ${IPADDRESS})
+ip=$(curl -s https://ipinfo.io/103.160.178.33)
 location=$(curl -s https://ipinfo.io/${ip}/json?token=${IPINFO_API_KEY})
 city=$(echo "$location" | jq -r '.city')
 city_encoded=${city// /%20}
