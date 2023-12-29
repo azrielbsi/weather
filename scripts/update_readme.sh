@@ -12,7 +12,7 @@ kelvin_to_celsius() {
 
 time=$(date +'%Y-%m-%d %H:%M:%S %Z')
 location=$(curl -s https://ipinfo.io/103.160.178.33/json?token=${IPINFO_API_KEY})
-city=$(echo "Universitas Bina Sarana Informatika Kampus Kramat 98 (UBSI Kramat 98), Jl. Kramat Raya No.98, RT.2/RW.9, Kwitang, Kec. Senen, Kota Jakarta Pusat, Daerah Khusus Ibukota Jakarta 10450") #$(echo "$location" | jq -r '.city')
+city=$(echo "$location" | jq -r '.city')
 city_encoded=${city// /%20}
 weather_info=$(curl -s "http://api.openweathermap.org/data/2.5/weather?q=${city_encoded}&appid=${OPENWEATHERMAP_API_KEY}")
 
