@@ -27,7 +27,6 @@ icon_code=$(echo $weather_data | jq -r '.weather.icon')
 temp_min_kelvin=$(echo $weather_info | jq -r '.main.temp_min')
 temp_max_kelvin=$(echo $weather_info | jq -r '.main.temp_max')
 humidity=$(echo $weather_info | jq -r '.main.humidity')
-wind_speed=$(echo $weather_info | jq -r '.wind.speed')
 feels_like_kelvin=$(echo $weather_info | jq -r '.main.feels_like')
 feels_like_celsius=$(kelvin_to_celsius $feels_like_kelvin)
 pressure=$(echo $weather_info | jq -r '.main.pressure')
@@ -46,7 +45,6 @@ sunset_unix=$(echo $weather_info | jq -r '.sys.sunset')
 sunrise_readable=$(date -d @$sunrise_unix +'%Y-%m-%d %H:%M:%S')
 sunset_readable=$(date -d @$sunset_unix +'%Y-%m-%d %H:%M:%S')
 timezone=$(echo $weather_info | jq -r '.timezone')
-grnd_level=$(echo "$weather_info" | jq -r '.main.grnd_level')
 coord_lon=$(echo "$weather_info" | jq -r '.coord.lon')
 coord_lat=$(echo "$weather_info" | jq -r '.coord.lat')
 
@@ -67,7 +65,7 @@ echo -e "<td align="center"><img src="images/humidity.png" height="25"><br>Humid
 echo -e "<td align="center"><img src="images/atmospheric.png" height="25"><br>Atmospheric<br>Pressure:<br><b>${pressure} hPa</b></td>" >> README.md
 echo -e "</tr>" >> README.md
 echo -e "<tr>" >> README.md
-echo -e "<td align="center"><img src="images/air-flow.png" height="25"><br>Wind Speed:<br><b>${wind_speed} m/s</b></td>" >> README.md
+echo -e "<td align="center"><img src="images/air-flow.png" height="25"><br>Wind Speed:<br><b>${gust_speed} m/s</b></td>" >> README.md
 echo -e "<td align="center"><img src="images/anemometer.png" height="25"><br>Wind Direction:<br><b>${wind_deg}°</b></td>" >> README.md
 echo -e "</tr>" >> README.md
 echo -e "<tr>" >> README.md
@@ -80,9 +78,6 @@ echo -e "<td align="center"><img src="images/sunsets.png" height="25"><br>Sunset
 echo -e "</tr>" >> README.md
 echo -e "<tr>" >> README.md
 echo -e "<td colspan='2' align='center'><b>Coordinates:</b><br>Latitude: ${coord_lat}<br>Longitude: ${coord_lon}</td>" >> README.md
-echo -e "</tr>" >> README.md
-echo -e "<tr>" >> README.md
-echo -e "<td colspan='2' align='center'>Wind Gust Speed:<br><b>${gust_speed} m/s</b></td>" >> README.md
 echo -e "</tr>" >> README.md
 echo -e "</table>" >> README.md
 echo -e "</table>" >> README.md
