@@ -11,7 +11,7 @@ kelvin_to_celsius() {
 }
 
 time=$(date +'%Y-%m-%d %H:%M:%S %Z')
-city="Tokyo"
+city="Pasir Gunung Selatan"
 weather_info=$(curl -s "http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${OPENWEATHERMAP_API_KEY}")
 
 latitude=$(echo "$weather_info" | jq -r '.coord.lat')
