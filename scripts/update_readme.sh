@@ -61,8 +61,8 @@ echo -e "<td align="center"><img src="images/air-flow.png" height="40"><br>Wind 
 echo -e "<td align="center"><img src="images/anemometer.png" height="40"><br>Wind Direction: <b>${wind_deg}°</b></td>" >> README.md
 echo -e "</tr>" >> README.md
 echo -e "<tr>" >> README.md
-echo -e "<td>Cloudiness: ${clouds}%</td>" >> README.md
-echo -e "<td>Visibility: ${visibility} meters</td>" >> README.md
+echo -e "<td align="center"><img src="images/cloudy.png" height="40"><br>Cloudiness: <b>${clouds}%</b></td>" >> README.md
+echo -e "<td align="center"><img src="images/low-visibility.png" height="40"><br>Visibility: <b>${visibility} meters</b></td>" >> README.md
 echo -e "</tr>" >> README.md
 echo -e "<tr>" >> README.md
 echo -e "<td>Sunrise: ${sunrise_readable}</td>" >> README.md
