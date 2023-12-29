@@ -25,7 +25,7 @@ wind_speed=$(echo $weather_info | jq -r '.wind.speed')
 feels_like_kelvin=$(echo $weather_data | jq -r '.main.feels_like')
 feels_like_celsius=$(kelvin_to_celsius $feels_like_kelvin)
 pressure=$(echo $weather_info | jq -r '.main.pressure')
-sea_level=$(echo $weather_info | jq -r '.main.sea_level')
+visibility=$(echo $weather_info | jq -r '.visibility')
 
 temp_min_celsius=$(kelvin_to_celsius $temp_min_kelvin)
 temp_max_celsius=$(kelvin_to_celsius $temp_max_kelvin)
@@ -53,7 +53,7 @@ echo -e "<tr>" >> README.md
 echo -e "<td>Tekanan Udara: ${pressure} hPa</td>" >> README.md
 echo -e "</tr>" >> README.md
 echo -e "<tr>" >> README.md
-echo -e "<td>Sea Level: ${sea_level} hPa</td>" >> README.md
+echo -e "<td>${visibility_info}</td>" >> README.md
 echo -e "</tr>" >> README.md
 echo -e "</table>" >> README.md
 echo -e "</table>" >> README.md
