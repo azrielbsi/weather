@@ -74,7 +74,7 @@ echo -e "<td align='center'><img src='images/anemometer.png' height='25'><br>Win
 echo -e "</tr>" >> README.md
 echo -e "<tr>" >> README.md
 echo -e "<td align='center'><img src='images/cloudy.png' height='25'><br>Cloudiness:<br><b>${clouds:-N/A}%</b></td>" >> README.md
-echo -e "<td align='center'><img src='images/low-visibility.png' height='25'><br>Visibility:<br><b>${visibility_km:-N/A} km</b></td>" >> README.md
+echo -e "<td align='center'><img src='images/low-visibility.png' height='25'><br>Visibility:<br><b>${visibility_km} km</b></td>" >> README.md
 echo -e "</tr>" >> README.md
 echo -e "<tr>" >> README.md
 echo -e "<td align='center'><img src='images/sunrise.png' height='25'><br>Sunrise:<br><b>${sunrise_readable:-N/A}</b></td>" >> README.md
