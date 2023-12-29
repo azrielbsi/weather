@@ -53,7 +53,7 @@ echo -e "<tr>" >> README.md
 echo -e "<td>Tekanan Udara: ${pressure} hPa</td>" >> README.md
 echo -e "</tr>" >> README.md
 echo -e "<tr>" >> README.md
-echo -e "<td>${visibility_info}</td>" >> README.md
+echo -e "<td>${visibility}</td>" >> README.md
 echo -e "</tr>" >> README.md
 echo -e "</table>" >> README.md
 echo -e "</table>" >> README.md
