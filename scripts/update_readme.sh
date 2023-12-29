@@ -39,12 +39,9 @@ sunset_unix=$(echo $weather_info | jq -r '.sys.sunset')
 sunrise_readable=$(date -d @$sunrise_unix +'%Y-%m-%d %H:%M:%S')
 sunset_readable=$(date -d @$sunset_unix +'%Y-%m-%d %H:%M:%S')
 timezone=$(echo $weather_info | jq -r '.timezone')
-timestamp=$(echo $weather_info | jq -r '.dt')
-formatted_time=$(date -d @$timestamp +'%Y-%m-%d %H:%M:%S')
-
 
 echo "# <h1 align="center"><img height="40" src="images/cloud.png"> Daily Weather <img height="40" src="images/cloud.png"></h1>" > README.md
-echo -e "<h3 align="center">🕒 Indonesian Time(UTC +07:00): <u>$time</u> (🤖Automated)</h3>\n" >> README.md
+echo -e "<h3 align="center">🕒 Indonesian Time(UTC$(printf "%+.2f" "$(bc <<< "scale=2; $timezone / 3600")")): <u>$time</u> (🤖Automated)</h3>\n" >> README.md
 echo -e "<table align="center">" >> README.md
 echo -e "<tr>" >> README.md
 echo -e "<td align="center"><b>${city}</b><br><img src="images/thermometer.png" height="18"> <b>${temperature_celsius}°C</b><br><img src='${icon_url}' height='40'><br><b>$condition</b><br>Feels Like: ${feels_like_celsius}°C</td>" >> README.md
@@ -57,25 +54,19 @@ echo -e "<td><img src="images/fast.png" height="18"> Maximum Temperature: <b>${t
 echo -e "</tr>" >> README.md
 echo -e "<tr>" >> README.md
 echo -e "<td><img src="images/humidity.png" height="18"> Humidity: <b>${humidity}%</b></td>" >> README.md
-echo -e "<td><img src="images/air-flow.png" height="18"> Wind Speed: <b>${wind_speed} m/s</b></td>" >> README.md
+echo -e "<td>Pressure: ${pressure} hPa</td>" >> README.md
 echo -e "</tr>" >> README.md
 echo -e "<tr>" >> README.md
-echo -e "<td>Pressure: ${pressure} hPa</td>" >> README.md
+echo -e "<td><img src="images/air-flow.png" height="18"> Wind Speed: <b>${wind_speed} m/s</b></td>" >> README.md
 echo -e "<td>Wind Direction: ${wind_deg}°</td>" >> README.md
 echo -e "</tr>" >> README.md
 echo -e "<tr>" >> README.md
-echo -e "<td>Visibility: ${visibility} meters</td>" >> README.md
-echo -e "</tr>" >> README.md
-echo -e "<tr>" >> README.md
 echo -e "<td>Cloudiness: ${clouds}%</td>" >> README.md
+echo -e "<td>Visibility: ${visibility} meters</td>" >> README.md
 echo -e "</tr>" >> README.md
 echo -e "<tr>" >> README.md
 echo -e "<td>Sunrise: ${sunrise_readable}</td>" >> README.md
 echo -e "<td>Sunset: ${sunset_readable}</td>" >> README.md
-echo -e "</tr>" >> README.md
-echo -e "<tr>" >> README.md
-echo -e "<td>Timezone: UTC$(printf "%+.2f" "$(bc <<< "scale=2; $timezone / 3600")")</td>" >> README.md 
-echo -e "<td>Time: ${formatted_time}</td>" >> README.md
 echo -e "</tr>" >> README.md
 echo -e "</table>" >> README.md
 echo -e "</table>" >> README.md
