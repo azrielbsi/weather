@@ -40,7 +40,7 @@ sunset_unix=$(echo $weather_info | jq -r '.sys.sunset')
 sunrise_readable=$(date -d @$sunrise_unix +'%Y-%m-%d %H:%M:%S')
 sunset_readable=$(date -d @$sunset_unix +'%Y-%m-%d %H:%M:%S')
 timezone=$(echo $weather_info | jq -r '.timezone')
-rain_volume=$(echo $weather_info | jq -r '.rain.1h')
+rain_volume=$(echo $weather_data | jq -r '.rain.1h')
 
 echo "# <h1 align="center"><img height="40" src="images/cloud.png"> Daily Weather Report <img height="40" src="images/cloud.png"></h1>" > README.md
 echo -e "<h3 align="center">🕒 Indonesian Time(UTC$(printf "%+.2f" "$(bc <<< "scale=2; $timezone / 3600")")): <u>$time</u> (🤖Automated)</h3>\n" >> README.md
