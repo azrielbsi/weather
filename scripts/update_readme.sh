@@ -68,7 +68,7 @@ echo -e "<td align='center'><img src='images/humidity.png' height='25'><br>Humid
 echo -e "<td align='center'><img src='images/atmospheric.png' height='25'><br>Atmospheric Pressure: <b>${pressure:-0} hPa</b></td>" >> README.md
 echo -e "</tr>" >> README.md
 echo -e "<tr>" >> README.md
-echo -e "<td align='center'><img src='images/air-flow.png' height='25'><br>Wind Speed: <b>${wind_speed:-0} m/s<br>Wind Gust Speed: ${gust_speed:-0} m/s</b></td>" >> README.md
+echo -e "<td align='center'><img src='images/air-flow.png' height='25'><br>Wind Speed: <b>${wind_speed:-0} m/s</b><br>Wind Gust Speed: <b>${gust_speed:-0} m/s</b></td>" >> README.md
 echo -e "<td align='center'><img src='images/anemometer.png' height='25'><br>Wind Direction: <b>${wind_deg:-0}°</b></td>" >> README.md
 echo -e "</tr>" >> README.md
 echo -e "<tr>" >> README.md
