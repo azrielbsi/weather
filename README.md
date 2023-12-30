@@ -1,5 +1,5 @@
 # <h1 align='center'><img height='40' src='images/cloud.png'> Daily Weather Report <img height='40' src='images/cloud.png'></h1>
-<h3 align='center'>🕒 Indonesian Time(UTC+7.00): <u>2023-12-31 05:10:12 WIB</u> (🤖Automated)</h3>
+<h3 align='center'>🕒 Indonesian Time(UTC+7.00): <u>2023-12-31 05:12:10 WIB</u> (🤖Automated)</h3>
 
 <table align='center'>
 <tr>
@@ -16,7 +16,7 @@
 <td align='center'><img src='images/atmospheric.png' height='25'><br>Atmospheric Pressure: <b>1002 hPa</b></td>
 </tr>
 <tr>
-<td align='center'><img src='images/air-flow.png' height='25'><br>Wind Speed: <b>0.74 m/s<br>Wind Gust Speed: 0.76 m/s</b></td>
+<td align='center'><img src='images/air-flow.png' height='25'><br>Wind Speed: <b>0.74 m/s</b><br>Wind Gust Speed: <b>0.76 m/s</b></td>
 <td align='center'><img src='images/anemometer.png' height='25'><br>Wind Direction: <b>190°</b></td>
 </tr>
 <tr>
