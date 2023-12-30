@@ -11,7 +11,7 @@ kelvin_to_celsius() {
 }
 
 time=$(date +'%Y-%m-%d %H:%M:%S %Z')
-location=$(curl -s "https://geoip.maxmind.com/geoip/v2.1/city/me?edition_id=GeoLite2-City&license_key=${YOUR_MAXMIND_LICENSE_KEY}")
+location=$(curl -s "https://ipinfo.io/116.206.8.2/json?token=${IPINFO_API_KEY}")
 city=$(echo "$location" | jq -r '.city')
 city_encoded=${city// /%20}
 weather_info=$(curl -s "http://api.openweathermap.org/data/2.5/weather?q=${city_encoded}&appid=${OPENWEATHERMAP_API_KEY}")
