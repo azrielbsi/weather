@@ -1,9 +1,9 @@
 # <h1 align='center'><img height='40' src='images/cloud.png'> Daily Weather Report <img height='40' src='images/cloud.png'></h1>
-<h3 align='center'>🕒 Indonesian Time(UTC+7.00): <u>2023-12-31 05:45:21 WIB</u> (🤖Automated)</h3>
+<h3 align='center'>🕒 Indonesian Time(UTC+7.00): <u>2023-12-31 06:10:47 WIB</u> (🤖Automated)</h3>
 
 <table align='center'>
 <tr>
-<td align='center'><img src='images/placeholder.png' height='18'> <b>Depok</b><br><b>Latitude: -6.4 Longitude: 106.8186</b><br><img src='images/thermometer.png' height='18'> <b>26.98°C</b><br><img src='https://openweathermap.org/img/w/50d.png' height='50'><br><b>Haze</b><br><b>(haze)</b><br><b>Feels Like: 31.32°C</b></td>
+<td align='center'><img src='images/placeholder.png' height='18'> <b>Depok</b><br><b>Latitude: -6.4 Longitude: 106.8186</b><br><img src='images/thermometer.png' height='18'> <b>27.07°C</b><br><img src='https://openweathermap.org/img/w/50d.png' height='50'><br><b>Haze</b><br><b>(haze)</b><br><b>Feels Like: 31.62°C</b></td>
 </tr>
 <td>
 <table>
