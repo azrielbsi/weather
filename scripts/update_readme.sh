@@ -64,8 +64,8 @@ echo -e "<td align='center'><img src='images/fast.png' height='25'> Minimum Temp
 echo -e "<td align='center'><img src='images/fast.png' height='25'> Maximum Temperature: <b>${temp_max_celsius:-0}°C</b></td>" >> README.md
 echo -e "</tr>" >> README.md
 echo -e "<tr>" >> README.md
-echo -e "<td align='center'><img src='images/humidity.png' height='25'><br>Humidity: <b>${humidity:-0}%</b></td>" >> README.md
-echo -e "<td align='center'><img src='images/atmospheric.png' height='25'><br>Atmospheric Pressure: <b>${pressure:-0} hPa</b></td>" >> README.md
+echo -e "<td align='center'><img src='images/humidity.png' height='25'> Humidity: <b>${humidity:-0}%</b></td>" >> README.md
+echo -e "<td align='center'><img src='images/atmospheric.png' height='25'> Atmospheric Pressure: <b>${pressure:-0} hPa</b></td>" >> README.md
 echo -e "</tr>" >> README.md
 echo -e "<tr>" >> README.md
 echo -e "<td align='center'><img src='images/air-flow.png' height='25'> Wind Speed: <b>${wind_speed:-0} m/s</b><br>Wind Gust Speed: <b>${gust_speed:-0} m/s</b></td>" >> README.md
