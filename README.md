@@ -1,5 +1,5 @@
 # <h1 align='center'><img height='40' src='images/cloud.png'> Daily Weather Report <img height='40' src='images/cloud.png'></h1>
-<h3 align='center'>🕒 Indonesian Time(UTC+7.00): <u>2024-01-01 06:28:29 WIB</u> (🤖Automated)</h3>
+<h3 align='center'>🕒 Indonesian Time(UTC+7.00): <u>2024-01-01 06:34:46 WIB</u> (🤖Automated)</h3>
 
 <table align='center'>
 <tr>
@@ -7,16 +7,6 @@
 </tr>
 <td>
 <table align=center>
-<table align=center>
-<tr>
-<td align=center><b>25.91°C</b><br><img src='https://openweathermap.org/img/w/03d.png' height='50'><br><b>Clouds</b><br><b>07:00</b></td>
-<td align=center><b>27.05°C</b><br><img src='https://openweathermap.org/img/w/04d.png' height='50'><br><b>Clouds</b><br><b>10:00</b></td>
-<td align=center><b>29.96°C</b><br><img src='https://openweathermap.org/img/w/04d.png' height='50'><br><b>Clouds</b><br><b>13:00</b></td>
-<td align=center><b>30.28°C</b><br><img src='https://openweathermap.org/img/w/10d.png' height='50'><br><b>Rain</b><br><b>16:00</b></td>
-<td align=center><b>28.81°C</b><br><img src='https://openweathermap.org/img/w/10n.png' height='50'><br><b>Rain</b><br><b>19:00</b></td>
-<td align=center><b>27.90°C</b><br><img src='https://openweathermap.org/img/w/10n.png' height='50'><br><b>Rain</b><br><b>22:00</b></td>
-<td align=center><b>27.17°C</b><br><img src='https://openweathermap.org/img/w/04n.png' height='50'><br><b>Clouds</b><br><b>01:00</b></td>
-<td align=center><b>26.36°C</b><br><img src='https://openweathermap.org/img/w/04n.png' height='50'><br><b>Clouds</b><br><b>04:00</b></td>
 <tr>
 <td align=center colspan=2><img src=images/rain.png height=25><br>Rainfall: <b>0 Millimeters</b></td>
 </tr>
@@ -42,12 +32,12 @@
 </tr>
 </table>
 </table>
-<h2>Next 24 Hours Forecast</h2>
+<h2 align=center><img src=images/clock.png height=40>Next 24 Hours</h2>
 <table align=center>
 <tr>
-<td align=center><b>25.91°C</b><br><img src='https://openweathermap.org/img/w/03d.png' height='50'><br><b>Clouds</b><br><b>07:00</b></td>
-<td align=center><b>27.05°C</b><br><img src='https://openweathermap.org/img/w/04d.png' height='50'><br><b>Clouds</b><br><b>10:00</b></td>
-<td align=center><b>29.96°C</b><br><img src='https://openweathermap.org/img/w/04d.png' height='50'><br><b>Clouds</b><br><b>13:00</b></td>
+<td align=center><b>26.61°C</b><br><img src='https://openweathermap.org/img/w/03d.png' height='50'><br><b>Clouds</b><br><b>07:00</b></td>
+<td align=center><b>27.52°C</b><br><img src='https://openweathermap.org/img/w/04d.png' height='50'><br><b>Clouds</b><br><b>10:00</b></td>
+<td align=center><b>30.19°C</b><br><img src='https://openweathermap.org/img/w/04d.png' height='50'><br><b>Clouds</b><br><b>13:00</b></td>
 <td align=center><b>30.28°C</b><br><img src='https://openweathermap.org/img/w/10d.png' height='50'><br><b>Rain</b><br><b>16:00</b></td>
 <td align=center><b>28.81°C</b><br><img src='https://openweathermap.org/img/w/10n.png' height='50'><br><b>Rain</b><br><b>19:00</b></td>
 <td align=center><b>27.90°C</b><br><img src='https://openweathermap.org/img/w/10n.png' height='50'><br><b>Rain</b><br><b>22:00</b></td>
