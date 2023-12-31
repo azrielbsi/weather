@@ -1,39 +1,18 @@
 # <h1 align='center'><img height='40' src='images/cloud.png'> Daily Weather Report <img height='40' src='images/cloud.png'></h1>
-<h3 align='center'>🕒 Indonesian Time(UTC+7.00): <u>2024-01-01 04:51:20 WIB</u> (🤖Automated)</h3>
+<h3 align='center'>🕒 Indonesian Time(UTC+7.00): <u>2024-01-01 04:57:42 WIB</u> (🤖Automated)</h3>
 
-<h2>5-Day Forecast</h2>
-<h3>2024-01-01</h3>
-<p><b>Condition:</b> overcast clouds</p>
-<p><b>Temperature:</b> 26.48°C</p>
-<hr>
-<h3>2024-01-01</h3>
-<p><b>Condition:</b> overcast clouds</p>
-<p><b>Temperature:</b> 28.37°C</p>
-<hr>
-<h3>2024-01-01</h3>
-<p><b>Condition:</b> overcast clouds</p>
-<p><b>Temperature:</b> 31.98°C</p>
-<hr>
-<h3>2024-01-01</h3>
-<p><b>Condition:</b> light rain</p>
-<p><b>Temperature:</b> 30.28°C</p>
-<hr>
-<h3>2024-01-01</h3>
-<p><b>Condition:</b> light rain</p>
-<p><b>Temperature:</b> 28.81°C</p>
-<hr>
 <table align='center'>
 <tr>
-<td align='center'><img src='images/placeholder.png' height='18'> <b>Depok</b><br><b>Latitude: -6.4 Longitude: 106.8186</b><br><img src='images/thermometer.png' height='18'> <b>26.44°C</b><br><img src='https://openweathermap.org/img/w/04n.png' height='50'><br><b>Clouds</b><br><b>(overcast clouds)</b><br><b>Feels Like: 26.44°C overcast clouds - Wind Direction: North-Northwest</b></td>
+<td align='center'><img src='images/placeholder.png' height='18'> <b>Depok</b><br><b>Latitude: -6.4 Longitude: 106.8186</b><br><img src='images/thermometer.png' height='18'> <b>26.68°C</b><br><img src='https://openweathermap.org/img/w/04n.png' height='50'><br><b>Clouds</b><br><b>(overcast clouds)</b><br><b>Feels Like: 30.62°C overcast clouds - Wind Direction: North-Northwest</b></td>
 </tr>
 <td>
-<table>
+<table align=center>
 <tr>
 <td align=center colspan=2><img src=images/rain.png height=25><br>Rainfall: <b>0 Millimeters</b></td>
 </tr>
 <tr>
 <td align='center'><img src='images/fast.png' height='25'><br>Minimum<br>Temperature:<br><b>25.01°C</b></td>
-<td align='center'><img src='images/fast.png' height='25'><br>Maximum<br>Temperature:<br><b>27.57°C</b></td>
+<td align='center'><img src='images/fast.png' height='25'><br>Maximum<br>Temperature:<br><b>28.12°C</b></td>
 </tr>
 <tr>
 <td align='center'><img src='images/humidity.png' height='25'><br>Humidity:<br><b>99%</b></td>
@@ -53,3 +32,8 @@
 </tr>
 </table>
 </table>
+<h2>5-Day Forecast</h2>
+<h3>2024-01-01</h3>
+<p><b>Condition:</b> overcast clouds</p>
+<p><b>Temperature:</b> 26.64°C</p>
+<hr>
