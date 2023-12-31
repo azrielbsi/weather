@@ -1,9 +1,9 @@
 # <h1 align='center'><img height='40' src='images/cloud.png'> Daily Weather Report <img height='40' src='images/cloud.png'></h1>
-<h3 align='center'>🕒 Indonesian Time(UTC+7.00): <u>2024-01-01 05:00:48 WIB</u> (🤖Automated)</h3>
+<h3 align='center'>🕒 Indonesian Time(UTC+7.00): <u>2024-01-01 05:02:45 WIB</u> (🤖Automated)</h3>
 
 <table align='center'>
 <tr>
-<td align='center'><img src='images/placeholder.png' height='18'> <b>Depok</b><br><b>Latitude: -6.4 Longitude: 106.8186</b><br><img src='images/thermometer.png' height='18'> <b>26.68°C</b><br><img src='https://openweathermap.org/img/w/04n.png' height='50'><br><b>Clouds</b><br><b>(overcast clouds)</b><br><b>Feels Like: 30.62°C overcast clouds - Wind Direction: North-Northwest</b></td>
+<td align='center'><img src='images/placeholder.png' height='18'> <b>Depok</b><br><b>Latitude: -6.4 Longitude: 106.8186</b><br><img src='images/thermometer.png' height='18'> <b>26.19°C</b><br><img src='https://openweathermap.org/img/w/04n.png' height='50'><br><b>Clouds</b><br><b>(overcast clouds)</b><br><b>Feels Like: 26.19°C overcast clouds - Wind Direction: North-Northwest</b></td>
 </tr>
 <td>
 <table align=center>
@@ -33,6 +33,7 @@
 </table>
 </table>
 <h2>5-Day Forecast</h2>
-| Date       | Condition              | Temperature   |
-|------------|------------------------|---------------|
-| 2024-01-01 | overcast clouds | 26.31°C |
+<h3>2024-01-01</h3>
+<p><b>Condition:</b> overcast clouds</p>
+<p><b>Temperature:</b> 26.31°C</p>
+<hr>
