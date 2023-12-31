@@ -92,7 +92,7 @@ wind_direction_text() {
 }
 wind_direction_text=$(wind_direction_text $wind_direction)
 weather_description_with_wind="${condition1} - Wind Direction: ${wind_direction_text:-Unknown}"
-forecast_info=$(curl -s "http://api.openweathermap.org/data/2.5/forecast?q=${city_encoded}&cnt=5&appid=${OPENWEATHERMAP_API_KEY}")
+forecast_24h_info=$(curl -s "http://api.openweathermap.org/data/2.5/forecast?q=${city_encoded}&cnt=8&appid=${OPENWEATHERMAP_API_KEY}")
 
 echo "# <h1 align='center'><img height='40' src='images/cloud.png'> Daily Weather Report <img height='40' src='images/cloud.png'></h1>" > README.md
 echo -e "<h3 align='center'>🕒 Indonesian Time(UTC$(printf "%+.2f" "$(bc <<< "scale=2; $timezone / 3600")")): <u>$time</u> (🤖Automated)</h3>\n" >> README.md
@@ -127,20 +127,24 @@ echo -e "<td align='center'><img src='images/sunsets.png' height='25'><br>Sunset
 echo -e "</tr>" >> README.md
 echo -e "</table>" >> README.md
 echo -e "</table>" >> README.md
-echo "<h2>5-Day Forecast</h2>" >> README.md
+echo "<h2>Next 24 Hours Forecast</h2>" >> README.md
 
-for ((i=0; i<5; i++)); do
-    forecast_date_unix=$(echo "$forecast_info" | jq -r ".list[$i].dt")
-    forecast_date_readable=$(date -d @$forecast_date_unix +'%Y-%m-%d')
+current_time=$(date +'%Y-%m-%d %H:%M:%S')
+twenty_four_hours_later=$(date -d "+24 hours" +'%Y-%m-%d %H:%M:%S')
+for ((i=0; i<8; i++)); do
+    forecast_date_unix=$(echo "$forecast_24h_info" | jq -r ".list[$i].dt")
+    forecast_date_readable=$(date -d @$forecast_date_unix +'%Y-%m-%d %H:%M:%S')
 
-    forecast_condition=$(echo "$forecast_info" | jq -r ".list[$i].weather[0].description")
-    forecast_temperature_kelvin=$(echo "$forecast_info" | jq -r ".list[$i].main.temp")
-    forecast_temperature_celsius=$(kelvin_to_celsius $forecast_temperature_kelvin)
+    if [[ $forecast_date_readable > $current_time && $forecast_date_readable < $twenty_four_hours_later ]]; then
+        forecast_condition=$(echo "$forecast_24h_info" | jq -r ".list[$i].weather[0].description")
+        forecast_temperature_kelvin=$(echo "$forecast_24h_info" | jq -r ".list[$i].main.temp")
+        forecast_temperature_celsius=$(kelvin_to_celsius $forecast_temperature_kelvin)
 
-    echo -e "<h3>$forecast_date_readable</h3>" >> README.md
-    echo -e "<p><b>Condition:</b> $forecast_condition</p>" >> README.md
-    echo -e "<p><b>Temperature:</b> ${forecast_temperature_celsius:-0}°C</p>" >> README.md
-    echo -e "<hr>" >> README.md
+        echo -e "<p><b>Date:</b> $forecast_date_readable</p>" >> README.md
+        echo -e "<p><b>Condition:</b> $forecast_condition</p>" >> README.md
+        echo -e "<p><b>Temperature:</b> ${forecast_temperature_celsius:-0}°C</p>" >> README.md
+        echo -e "<hr>" >> README.md
+    fi
 done
 
 git config --global user.email "action@github.com"
