@@ -146,7 +146,7 @@ for ((i=0; i<8; i++)); do
 
         icon_url="https://openweathermap.org/img/w/${weather_icon_code}.png"
 
-        echo -e "<td align="center"><b>${forecast_temperature_celsius:-0}°C</b><br><img src='$icon_url' height='50'><br><b>$forecast_condition</b><br><b>${forecast_date_readable:3:1}</b></td>" >> README.md        
+        echo -e "<td align="center"><b>${forecast_temperature_celsius:-0}°C</b><br><img src='$icon_url' height='50'><br><b>$forecast_condition</b><br><b>${forecast_date_readable:11:5}</b></td>" >> README.md        
     fi
 done
 
