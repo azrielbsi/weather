@@ -129,14 +129,13 @@ echo -e "</table>" >> README.md
 echo -e "</table>" >> README.md
 echo "<h2>5-Day Forecast</h2>" >> README.md
 
-start_date=$(date +%Y-%m-%d)
-end_date=$(date -d "$start_date +4 days" +%Y-%m-%d)
+current_date=$(date +'%Y-%m-%d')
 
-for ((i=0; i<5; i++)); do
+for ((i=0; i<40; i++)); do
     forecast_date_unix=$(echo "$forecast_info" | jq -r ".list[$i].dt")
     forecast_date_readable=$(date -d @$forecast_date_unix +'%Y-%m-%d')
 
-    if [[ $forecast_date_readable == $start_date ]]; then
+    if [[ $forecast_date_readable > $current_date ]]; then
         forecast_condition=$(echo "$forecast_info" | jq -r ".list[$i].weather[0].description")
         forecast_temperature_kelvin=$(echo "$forecast_info" | jq -r ".list[$i].main.temp")
         forecast_temperature_celsius=$(kelvin_to_celsius $forecast_temperature_kelvin)
@@ -146,11 +145,9 @@ for ((i=0; i<5; i++)); do
         echo -e "<p><b>Temperature:</b> ${forecast_temperature_celsius:-0}°C</p>" >> README.md
         echo -e "<hr>" >> README.md
 
-        start_date=$(date -d "$start_date +1 days" +%Y-%m-%d)
-    fi
-
-    if [[ $forecast_date_readable == $end_date ]]; then
-        break
+        if [[ $(date -d "$forecast_date_readable +1 days" +'%Y-%m-%d') == $(date -d "$current_date +5 days" +'%Y-%m-%d') ]]; then
+            break
+        fi
     fi
 done
 
