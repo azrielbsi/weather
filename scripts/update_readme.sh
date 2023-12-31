@@ -56,13 +56,38 @@ wind_direction=$(echo "$weather_info" | jq -r '.wind.deg')
 wind_direction_text() {
     local degree=$1
 
-    if (( $degree >= 338 || $degree <= 22 )); then
+    if (( $degree >= 348.75 || $degree < 11.25 )); then
         echo "North"
-    elif (( $degree >= 23 && $degree <= 67 )); then
+    elif (( $degree >= 11.25 && $degree < 33.75 )); then
+        echo "North-Northeast"
+    elif (( $degree >= 33.75 && $degree < 56.25 )); then
         echo "Northeast"
-    # ... dan seterusnya untuk arah lainnya
+    elif (( $degree >= 56.25 && $degree < 78.75 )); then
+        echo "East-Northeast"
+    elif (( $degree >= 78.75 && $degree < 101.25 )); then
+        echo "East"
+    elif (( $degree >= 101.25 && $degree < 123.75 )); then
+        echo "East-Southeast"
+    elif (( $degree >= 123.75 && $degree < 146.25 )); then
+        echo "Southeast"
+    elif (( $degree >= 146.25 && $degree < 168.75 )); then
+        echo "South-Southeast"
+    elif (( $degree >= 168.75 && $degree < 191.25 )); then
+        echo "South"
+    elif (( $degree >= 191.25 && $degree < 213.75 )); then
+        echo "South-Southwest"
+    elif (( $degree >= 213.75 && $degree < 236.25 )); then
+        echo "Southwest"
+    elif (( $degree >= 236.25 && $degree < 258.75 )); then
+        echo "West-Southwest"
+    elif (( $degree >= 258.75 && $degree < 281.25 )); then
+        echo "West"
+    elif (( $degree >= 281.25 && $degree < 303.75 )); then
+        echo "West-Northwest"
+    elif (( $degree >= 303.75 && $degree < 326.25 )); then
+        echo "Northwest"
     else
-        echo "Unknown"
+        echo "North-Northwest"
     fi
 }
 wind_direction_text=$(wind_direction_text $wind_direction)
