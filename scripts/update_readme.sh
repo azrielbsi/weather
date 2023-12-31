@@ -62,7 +62,7 @@ echo -e "</tr>" >> README.md
 echo -e "<td>" >> README.md
 echo -e "<table>" >> README.md
 echo -e "<tr>" >> README.md
-echo -e "<td align="center" colspan="2"><img src="images/rain.png" height="25"><br>Rainfall:<br><b>${rainfall_mm:-0} millimeters</b></td>" >> README.md
+echo -e "<td align="center" colspan="2"><img src="images/rain.png" height="25"><br>Rainfall: <b>${rainfall_mm:-0} millimeters</b></td>" >> README.md
 echo -e "</tr>" >> README.md
 echo -e "<tr>" >> README.md
 echo -e "<td align='center'><img src='images/fast.png' height='25'><br>Minimum<br>Temperature:<br><b>${temp_min_celsius:-0}°C</b></td>" >> README.md
