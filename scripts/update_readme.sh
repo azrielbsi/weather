@@ -52,12 +52,27 @@ sunset_readable=$(date -d @$sunset_unix +'%Y-%m-%d %H:%M:%S')
 timezone=$(echo "$weather_info" | jq -r '.timezone')
 coord_lon=$(echo "$weather_info" | jq -r '.coord.lon')
 coord_lat=$(echo "$weather_info" | jq -r '.coord.lat')
+wind_direction=$(echo "$weather_info" | jq -r '.wind.deg')
+wind_direction_text() {
+    local degree=$1
+
+    if (( $degree >= 338 || $degree <= 22 )); then
+        echo "North"
+    elif (( $degree >= 23 && $degree <= 67 )); then
+        echo "Northeast"
+    # ... dan seterusnya untuk arah lainnya
+    else
+        echo "Unknown"
+    fi
+}
+wind_direction_text=$(wind_direction_text $wind_direction)
+weather_description_with_wind="${condition1} - Wind Direction: ${wind_direction_text:-Unknown}"
 
 echo "# <h1 align='center'><img height='40' src='images/cloud.png'> Daily Weather Report <img height='40' src='images/cloud.png'></h1>" > README.md
 echo -e "<h3 align='center'>🕒 Indonesian Time(UTC$(printf "%+.2f" "$(bc <<< "scale=2; $timezone / 3600")")): <u>$time</u> (🤖Automated)</h3>\n" >> README.md
 echo -e "<table align='center'>" >> README.md
 echo -e "<tr>" >> README.md
-echo -e "<td align='center'><img src='images/placeholder.png' height='18'> <b>${city}</b><br><b>Latitude: ${coord_lat:-0} Longitude: ${coord_lon:-0}</b><br><img src='images/thermometer.png' height='18'> <b>${temperature_celsius:-0}°C</b><br><img src='${icon_url}' height='50'><br><b>$condition</b><br><b>($condition1)</b><br><b>Feels Like: ${feels_like_celsius:-0}°C</b></td>" >> README.md
+echo -e "<td align='center'><img src='images/placeholder.png' height='18'> <b>${city}</b><br><b>Latitude: ${coord_lat:-0} Longitude: ${coord_lon:-0}</b><br><img src='images/thermometer.png' height='18'> <b>${temperature_celsius:-0}°C</b><br><img src='${icon_url}' height='50'><br><b>$condition</b><br><b>($condition1)</b><br><b>Feels Like: ${feels_like_celsius:-0}°C ${weather_description_with_wind}</b></td>" >> README.md
 echo -e "</tr>" >> README.md
 echo -e "<td>" >> README.md
 echo -e "<table>" >> README.md
