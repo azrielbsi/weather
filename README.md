@@ -1,5 +1,5 @@
 # <h1 align='center'><img height='40' src='images/cloud.png'> Daily Weather Report <img height='40' src='images/cloud.png'></h1>
-<h3 align='center'>🕒 Indonesian Time(UTC+7.00): <u>2024-01-01 04:59:47 WIB</u> (🤖Automated)</h3>
+<h3 align='center'>🕒 Indonesian Time(UTC+7.00): <u>2024-01-01 05:00:48 WIB</u> (🤖Automated)</h3>
 
 <table align='center'>
 <tr>
@@ -33,23 +33,6 @@
 </table>
 </table>
 <h2>5-Day Forecast</h2>
-<h3>2024-01-01</h3>
-<p><b>Condition:</b> overcast clouds</p>
-<p><b>Temperature:</b> 26.31°C</p>
-<hr>
-<h3>2024-01-01</h3>
-<p><b>Condition:</b> overcast clouds</p>
-<p><b>Temperature:</b> 28.28°C</p>
-<hr>
-<h3>2024-01-01</h3>
-<p><b>Condition:</b> overcast clouds</p>
-<p><b>Temperature:</b> 31.98°C</p>
-<hr>
-<h3>2024-01-01</h3>
-<p><b>Condition:</b> light rain</p>
-<p><b>Temperature:</b> 30.28°C</p>
-<hr>
-<h3>2024-01-01</h3>
-<p><b>Condition:</b> light rain</p>
-<p><b>Temperature:</b> 28.81°C</p>
-<hr>
+| Date       | Condition              | Temperature   |
+|------------|------------------------|---------------|
+| 2024-01-01 | overcast clouds | 26.31°C |
