@@ -1,22 +1,22 @@
 # <h1 align='center'><img height='40' src='images/cloud.png'> Daily Weather Report <img height='40' src='images/cloud.png'></h1>
-<h3 align='center'>🕒 Indonesian Time(UTC+7.00): <u>2023-12-31 13:14:02 WIB</u> (🤖Automated)</h3>
+<h3 align='center'>🕒 Indonesian Time(UTC+7.00): <u>2023-12-31 14:10:13 WIB</u> (🤖Automated)</h3>
 
 <table align='center'>
 <tr>
-<td align='center'><img src='images/placeholder.png' height='18'> <b>Depok</b><br><b>Latitude: -6.4 Longitude: 106.8186</b><br><img src='images/thermometer.png' height='18'> <b>33.26°C</b><br><img src='https://openweathermap.org/img/w/03d.png' height='50'><br><b>Clouds</b><br><b>(scattered clouds)</b><br><b>Feels Like: 40.26°C</b></td>
+<td align='center'><img src='images/placeholder.png' height='18'> <b>Depok</b><br><b>Latitude: -6.4 Longitude: 106.8186</b><br><img src='images/thermometer.png' height='18'> <b>33.14°C</b><br><img src='https://openweathermap.org/img/w/03d.png' height='50'><br><b>Clouds</b><br><b>(scattered clouds)</b><br><b>Feels Like: 40.14°C</b></td>
 </tr>
 <td>
 <table>
 <tr>
-<td align='center'><img src='images/fast.png' height='25'><br>Minimum<br>Temperature:<br><b>30.55°C</b></td>
+<td align='center'><img src='images/fast.png' height='25'><br>Minimum<br>Temperature:<br><b>31.63°C</b></td>
 <td align='center'><img src='images/fast.png' height='25'><br>Maximum<br>Temperature:<br><b>35.36°C</b></td>
 </tr>
 <tr>
-<td align='center'><img src='images/humidity.png' height='25'><br>Humidity:<br><b>81%</b></td>
-<td align='center'><img src='images/atmospheric.png' height='25'><br>Atmospheric<br>Pressure:<br><b>1004 hPa</b></td>
+<td align='center'><img src='images/humidity.png' height='25'><br>Humidity:<br><b>84%</b></td>
+<td align='center'><img src='images/atmospheric.png' height='25'><br>Atmospheric<br>Pressure:<br><b>1003 hPa</b></td>
 </tr>
 <tr>
-<td align='center'><img src='images/air-flow.png' height='25'><br>Wind Speed:<br><b>3.09 m/s</b><br>Wind Gust Speed:<br><b>0 m/s</b></td>
+<td align='center'><img src='images/air-flow.png' height='25'><br>Wind Speed:<br><b>5.14 m/s</b><br>Wind Gust Speed:<br><b>0 m/s</b></td>
 <td align='center'><img src='images/anemometer.png' height='25'><br>Wind Direction:<br><b>350°</b></td>
 </tr>
 <tr>
