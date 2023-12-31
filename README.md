@@ -1,5 +1,5 @@
 # <h1 align='center'><img height='40' src='images/cloud.png'> Daily Weather Report <img height='40' src='images/cloud.png'></h1>
-<h3 align='center'>🕒 Indonesian Time(UTC+7.00): <u>2024-01-01 06:00:55 WIB</u> (🤖Automated)</h3>
+<h3 align='center'>🕒 Indonesian Time(UTC+7.00): <u>2024-01-01 06:05:44 WIB</u> (🤖Automated)</h3>
 
 <table align='center'>
 <tr>
@@ -35,5 +35,13 @@
 <h2>Next 24 Hours Forecast</h2>
 <table align=center>
 <tr>
+<td align=center><b>26.64°C</b><br><img src='https://openweathermap.org/img/w/03d.png' height='50'><br><b>Clouds</b><br><b>2024-</b></td>
+<td align=center><b>27.54°C</b><br><img src='https://openweathermap.org/img/w/04d.png' height='50'><br><b>Clouds</b><br><b>2024-</b></td>
+<td align=center><b>30.20°C</b><br><img src='https://openweathermap.org/img/w/04d.png' height='50'><br><b>Clouds</b><br><b>2024-</b></td>
+<td align=center><b>30.28°C</b><br><img src='https://openweathermap.org/img/w/10d.png' height='50'><br><b>Rain</b><br><b>2024-</b></td>
+<td align=center><b>28.81°C</b><br><img src='https://openweathermap.org/img/w/10n.png' height='50'><br><b>Rain</b><br><b>2024-</b></td>
+<td align=center><b>27.90°C</b><br><img src='https://openweathermap.org/img/w/10n.png' height='50'><br><b>Rain</b><br><b>2024-</b></td>
+<td align=center><b>27.17°C</b><br><img src='https://openweathermap.org/img/w/04n.png' height='50'><br><b>Clouds</b><br><b>2024-</b></td>
+<td align=center><b>26.36°C</b><br><img src='https://openweathermap.org/img/w/04n.png' height='50'><br><b>Clouds</b><br><b>2024-</b></td>
 </tr>
 </table>
