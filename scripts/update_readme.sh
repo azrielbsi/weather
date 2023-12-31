@@ -139,8 +139,12 @@ for ((i=0; i<8; i++)); do
         forecast_condition=$(echo "$forecast_24h_info" | jq -r ".list[$i].weather[0].description")
         forecast_temperature_kelvin=$(echo "$forecast_24h_info" | jq -r ".list[$i].main.temp")
         forecast_temperature_celsius=$(kelvin_to_celsius $forecast_temperature_kelvin)
+        weather_icon_code=$(echo "$forecast_24h_info" | jq -r ".list[$i].weather[0].icon")
+
+        icon_url="https://openweathermap.org/img/w/${weather_icon_code}.png"
 
         echo -e "<p><b>Date:</b> $forecast_date_readable</p>" >> README.md
+        echo -e "<img src='$icon_url'>" >> README.md
         echo -e "<p><b>Condition:</b> $forecast_condition</p>" >> README.md
         echo -e "<p><b>Temperature:</b> ${forecast_temperature_celsius:-0}°C</p>" >> README.md
         echo -e "<hr>" >> README.md
