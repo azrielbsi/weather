@@ -94,7 +94,7 @@ wind_direction_text=$(wind_direction_text $wind_direction)
 weather_description_with_wind="${condition1} - Wind Direction: ${wind_direction_text:-Unknown}"
 forecast_24h_info=$(curl -s "http://api.openweathermap.org/data/2.5/forecast?q=${city_encoded}&cnt=8&appid=${OPENWEATHERMAP_API_KEY}")
 
-echo "# <h1 align='center'><img height='40' src='images/cloud.png'> Daily Weather Report <img height='40' src='images/cloud.png'></h1>" > README.md
+echo "# <h1 align='center'><img height='35' src='images/cloud.png'> Daily Weather Report <img height='40' src='images/cloud.png'></h1>" > README.md
 echo -e "<h3 align='center'>🕒 Indonesian Time(UTC$(printf "%+.2f" "$(bc <<< "scale=2; $timezone / 3600")")): <u>$time</u> (🤖Automated)</h3>\n" >> README.md
 echo -e "<table align='center'>" >> README.md
 echo -e "<tr>" >> README.md
@@ -127,7 +127,7 @@ echo -e "<td align='center'><img src='images/sunsets.png' height='25'><br>Sunset
 echo -e "</tr>" >> README.md
 echo -e "</table>" >> README.md
 echo -e "</table>" >> README.md
-echo "<h2 align="center"><img src="images/clock.png" height="40">Next 24 Hours</h2>" >> README.md
+echo "<h2 align="center"><img src="images/clock.png" height="25"> Next 24 Hours</h2>" >> README.md
 
 current_time=$(date +'%Y-%m-%d %H:%M:%S')
 twenty_four_hours_later=$(date -d "+24 hours" +'%Y-%m-%d %H:%M:%S')
