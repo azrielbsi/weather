@@ -1,5 +1,5 @@
 # <h1 align='center'><img height='40' src='images/cloud.png'> Daily Weather Report <img height='40' src='images/cloud.png'></h1>
-<h3 align='center'>🕒 Indonesian Time(UTC+7.00): <u>2024-01-01 06:23:08 WIB</u> (🤖Automated)</h3>
+<h3 align='center'>🕒 Indonesian Time(UTC+7.00): <u>2024-01-01 06:24:38 WIB</u> (🤖Automated)</h3>
 
 <table align='center'>
 <tr>
@@ -33,7 +33,7 @@
 </table>
 </table>
 <h2>Next 24 Hours Forecast</h2>
-<table align=center>
+<table align=center style='width: 130.22px; height: 131px; padding: 8px;'>
 <tr>
 <td style='width: 130.22px; height: 131px; padding: 8px;' align=center><b>25.91°C</b><br><img src='https://openweathermap.org/img/w/03d.png' height='50'><br><b>Clouds</b><br><b>07:00</b></td>
 <td style='width: 130.22px; height: 131px; padding: 8px;' align=center><b>27.05°C</b><br><img src='https://openweathermap.org/img/w/04d.png' height='50'><br><b>Clouds</b><br><b>10:00</b></td>
