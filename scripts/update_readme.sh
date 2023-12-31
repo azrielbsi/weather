@@ -131,6 +131,7 @@ echo "<h2>Next 24 Hours Forecast</h2>" >> README.md
 
 current_time=$(date +'%Y-%m-%d %H:%M:%S')
 twenty_four_hours_later=$(date -d "+24 hours" +'%Y-%m-%d %H:%M:%S')
+echo -e "<div style='overflow-x:auto;'>" >> README.md
 echo -e "<table align="center">" >> README.md
 echo -e "<tr>" >> README.md
 
@@ -152,7 +153,7 @@ done
 
 echo -e "</tr>" >> README.md
 echo -e "</table>" >> README.md
-
+echo -e "</div>" >> README.md
 
 git config --global user.email "action@github.com"
 git config --global user.name "GitHub Action"
