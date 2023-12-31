@@ -1,18 +1,18 @@
 # <h1 align='center'><img height='40' src='images/cloud.png'> Daily Weather Report <img height='40' src='images/cloud.png'></h1>
-<h3 align='center'>🕒 Indonesian Time(UTC+7.00): <u>2023-12-31 19:20:03 WIB</u> (🤖Automated)</h3>
+<h3 align='center'>🕒 Indonesian Time(UTC+7.00): <u>2023-12-31 20:12:22 WIB</u> (🤖Automated)</h3>
 
 <table align='center'>
 <tr>
-<td align='center'><img src='images/placeholder.png' height='18'> <b>Depok</b><br><b>Latitude: -6.4 Longitude: 106.8186</b><br><img src='images/thermometer.png' height='18'> <b>27.15°C</b><br><img src='https://openweathermap.org/img/w/10n.png' height='50'><br><b>Rain</b><br><b>(moderate rain)</b><br><b>Feels Like: 31.76°C</b></td>
+<td align='center'><img src='images/placeholder.png' height='18'> <b>Depok</b><br><b>Latitude: -6.4 Longitude: 106.8186</b><br><img src='images/thermometer.png' height='18'> <b>26.88°C</b><br><img src='https://openweathermap.org/img/w/10n.png' height='50'><br><b>Rain</b><br><b>(light rain)</b><br><b>Feels Like: 30.89°C</b></td>
 </tr>
 <td>
 <table>
 <tr>
-<td align=center colspan=2><img src=images/rain.png height=25><br>Rainfall: <b>21.84 Millimeters</b></td>
+<td align=center colspan=2><img src=images/rain.png height=25><br>Rainfall: <b>3.81 Millimeters</b></td>
 </tr>
 <tr>
 <td align='center'><img src='images/fast.png' height='25'><br>Minimum<br>Temperature:<br><b>24.55°C</b></td>
-<td align='center'><img src='images/fast.png' height='25'><br>Maximum<br>Temperature:<br><b>30.91°C</b></td>
+<td align='center'><img src='images/fast.png' height='25'><br>Maximum<br>Temperature:<br><b>29.74°C</b></td>
 </tr>
 <tr>
 <td align='center'><img src='images/humidity.png' height='25'><br>Humidity:<br><b>95%</b></td>
