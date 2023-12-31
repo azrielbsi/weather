@@ -129,17 +129,17 @@ echo -e "</table>" >> README.md
 echo -e "</table>" >> README.md
 echo "<h2>Next 24 Hours Forecast</h2>" >> README.md
 
-current_time=$(date +'%Y-%m-%d %H:%M:%S')
-twenty_four_hours_later=$(date -d "+24 hours" +'%Y-%m-%d %H:%M:%S')
+current_time=$(date +'%H:%M:%S')
+twenty_four_hours_later=$(date -d "+24 hours" +'%H:%M:%S')
 echo -e "<table>" >> README.md
 echo -e "<tr>" >> README.md
 
 for ((i=0; i<8; i++)); do
     forecast_date_unix=$(echo "$forecast_24h_info" | jq -r ".list[$i].dt")
-    forecast_date_readable=$(date -d @$forecast_date_unix +'%Y-%m-%d %H:%M:%S')
+    forecast_date_readable=$(date -d @$forecast_date_unix +'%H:%M:%S')
 
     if [[ $forecast_date_readable > $current_time && $forecast_date_readable < $twenty_four_hours_later ]]; then
-        forecast_condition=$(echo "$forecast_24h_info" | jq -r ".list[$i].weather[0].description")
+        forecast_condition=$(echo "$forecast_24h_info" | jq -r ".list[$i].weather[0].main")
         forecast_temperature_kelvin=$(echo "$forecast_24h_info" | jq -r ".list[$i].main.temp")
         forecast_temperature_celsius=$(kelvin_to_celsius $forecast_temperature_kelvin)
         weather_icon_code=$(echo "$forecast_24h_info" | jq -r ".list[$i].weather[0].icon")
