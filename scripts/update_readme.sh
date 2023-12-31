@@ -131,6 +131,9 @@ echo "<h2>Next 24 Hours Forecast</h2>" >> README.md
 
 current_time=$(date +'%Y-%m-%d %H:%M:%S')
 twenty_four_hours_later=$(date -d "+24 hours" +'%Y-%m-%d %H:%M:%S')
+echo -e "<table>" >> README.md
+echo -e "<tr>" >> README.md
+
 for ((i=0; i<8; i++)); do
     forecast_date_unix=$(echo "$forecast_24h_info" | jq -r ".list[$i].dt")
     forecast_date_readable=$(date -d @$forecast_date_unix +'%Y-%m-%d %H:%M:%S')
@@ -143,13 +146,13 @@ for ((i=0; i<8; i++)); do
 
         icon_url="https://openweathermap.org/img/w/${weather_icon_code}.png"
 
-        echo -e "<table>" >> README.md
-        echo -e "<tr>" >> README.md
         echo -e "<td><b>${forecast_temperature_celsius:-0}°C</b><br><img src='$icon_url' height='50'><br><b>$forecast_condition</b><br><b>$forecast_date_readable</b></td>" >> README.md        
-        echo -e "</tr>" >> README.md
-        echo -e "</table>" >> README.md
     fi
 done
+
+echo -e "</tr>" >> README.md
+echo -e "</table>" >> README.md
+
 
 git config --global user.email "action@github.com"
 git config --global user.name "GitHub Action"
