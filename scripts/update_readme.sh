@@ -136,7 +136,7 @@ echo -e "<tr>" >> README.md
 
 for ((i=0; i<8; i++)); do
     forecast_date_unix=$(echo "$forecast_24h_info" | jq -r ".list[$i].dt")
-    forecast_date_readable=$(date -d @$forecast_date_unix +'%Y-%m-%d %H:%M:%S')
+    forecast_date_readable=$(date -d @$forecast_date_unix +'%H:%M')
 
     if [[ $forecast_date_readable > $current_time && $forecast_date_readable < $twenty_four_hours_later ]]; then
         forecast_condition=$(echo "$forecast_24h_info" | jq -r ".list[$i].weather[0].description")
