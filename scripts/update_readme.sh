@@ -153,6 +153,31 @@ done
 echo -e "</tr>" >> README.md
 echo -e "</table>" >> README.md
 
+echo "<h2>7-Day Weather Forecast</h2>" >> README.md
+
+forecast_7_days_info=$(curl -s "http://api.openweathermap.org/data/2.5/forecast/daily?q=${city_encoded}&cnt=7&appid=${OPENWEATHERMAP_API_KEY}")
+
+echo -e "<table align='center'>" >> README.md
+echo -e "<tr>" >> README.md
+
+for ((i=0; i<7; i++)); do
+    forecast_date_unix=$(echo "$forecast_7_days_info" | jq -r ".list[$i].dt")
+    forecast_date_readable=$(date -d @$forecast_date_unix +'%Y-%m-%d %H:%M:%S')
+
+    forecast_condition=$(echo "$forecast_7_days_info" | jq -r ".list[$i].weather[0].main")
+    forecast_temperature_day_kelvin=$(echo "$forecast_7_days_info" | jq -r ".list[$i].temp.day")
+    forecast_temperature_day_celsius=$(kelvin_to_celsius $forecast_temperature_day_kelvin)
+    weather_icon_code=$(echo "$forecast_7_days_info" | jq -r ".list[$i].weather[0].icon")
+
+    icon_url="https://openweathermap.org/img/w/${weather_icon_code}.png"
+
+    echo -e "<td align='center'><b>${forecast_temperature_day_celsius:-0}°C</b><br><img src='$icon_url' height='50'><br><b>$forecast_condition</b><br><b>${forecast_date_readable:0:10}</b></td>" >> README.md        
+done
+
+echo -e "</tr>" >> README.md
+echo -e "</table>" >> README.md
+
+
 git config --global user.email "action@github.com"
 git config --global user.name "GitHub Action"
 
