@@ -153,11 +153,9 @@ done
 echo -e "</tr>" >> README.md
 echo -e "</table>" >> README.md
 
-# Menggunakan endpoint forecast untuk mendapatkan ramalan cuaca 5 hari ke depan
-forecast_info=$(curl -s "http://api.openweathermap.org/data/2.5/forecast?q=${city_encoded}&cnt=5&appid=${OPENWEATHERMAP_API_KEY}")
-
-# Menampilkan informasi ramalan cuaca 5 hari ke dalam README.md
 echo "<h2>5-Day Forecast</h2>" >> README.md
+echo "<table style='border-collapse: collapse;'>" >> README.md
+echo "<tr>" >> README.md
 
 for ((i=0; i<5; i++)); do
     forecast_date_unix=$(echo "$forecast_info" | jq -r ".list[$i].dt")
@@ -167,11 +165,16 @@ for ((i=0; i<5; i++)); do
     forecast_temperature_kelvin=$(echo "$forecast_info" | jq -r ".list[$i].main.temp")
     forecast_temperature_celsius=$(kelvin_to_celsius $forecast_temperature_kelvin)
 
-    echo -e "<h3>$forecast_date_readable</h3>" >> README.md
-    echo -e "<p><b>Condition:</b> $forecast_condition</p>" >> README.md
-    echo -e "<p><b>Temperature:</b> ${forecast_temperature_celsius:-0}°C</p>" >> README.md
-    echo -e "<hr>" >> README.md
+    echo "<td style='border: 1px solid #dddddd; padding: 8px;'>" >> README.md
+    echo "<h3>$forecast_date_readable</h3>" >> README.md
+    echo "<p><b>Condition:</b> $forecast_condition</p>" >> README.md
+    echo "<p><b>Temperature:</b> ${forecast_temperature_celsius:-0}°C</p>" >> README.md
+    echo "<hr>" >> README.md
+    echo "</td>" >> README.md
 done
+
+echo "</tr>" >> README.md
+echo "</table>" >> README.md
 
 
 git config --global user.email "action@github.com"
