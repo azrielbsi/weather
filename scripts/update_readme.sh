@@ -153,30 +153,6 @@ done
 echo -e "</tr>" >> README.md
 echo -e "</table>" >> README.md
 
-forecast_info=$(curl -s "http://api.openweathermap.org/data/2.5/forecast?q=${city_encoded}&cnt=5&appid=${OPENWEATHERMAP_API_KEY}")
-
-echo "<h2>5-Day Forecast</h2>" >> README.md
-echo "<table>" >> README.md
-echo "<tr>" >> README.md
-
-for ((i=0; i<5; i++)); do
-    forecast_date_unix=$(echo "$forecast_info" | jq -r ".list[$i].dt")
-    forecast_date_readable=$(date -d @$forecast_date_unix +'%Y-%m-%d')
-
-    forecast_condition=$(echo "$forecast_info" | jq -r ".list[$i].weather[0].description")
-    forecast_temperature_kelvin=$(echo "$forecast_info" | jq -r ".list[$i].main.temp")
-    forecast_temperature_celsius=$(kelvin_to_celsius $forecast_temperature_kelvin)
-
-    echo "<td style='border: 1px solid #dddddd; padding: 8px;'>" >> README.md
-    echo "<b>Date:</b> $forecast_date_readable<br>" >> README.md
-    echo "<b>Condition:</b> $forecast_condition<br>" >> README.md
-    echo "<b>Temperature:</b> ${forecast_temperature_celsius:-0}°C" >> README.md
-    echo "</td>" >> README.md
-done
-
-echo "</tr>" >> README.md
-echo "</table>" >> README.md
-
 git config --global user.email "action@github.com"
 git config --global user.name "GitHub Action"
 
