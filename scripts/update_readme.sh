@@ -94,7 +94,7 @@ wind_direction_text() {
 }
 wind_direction_text=$(wind_direction_text $wind_direction)
 weather_description_with_wind="Wind Direction: ${wind_direction_text:-Unknown}"
-forecast_24h_info=$(curl -s "http://api.openweathermap.org/data/2.5/forecast?q=${city_encoded}&cnt=9&appid=${OPENWEATHERMAP_API_KEY}")
+forecast_24h_info=$(curl -s "http://api.openweathermap.org/data/2.5/forecast?q=${city_encoded}&cnt=30&appid=${OPENWEATHERMAP_API_KEY}")
 
 echo "# <h1 align='center'><img height='35' src='images/cloud.png'> Daily Weather Report <img height='40' src='images/cloud.png'></h1>" > README.md
 echo -e "<h3 align='center'>🕒 Indonesian Time(UTC$(printf "%+.2f" "$(bc <<< "scale=2; $timezone / 3600")")): <u>$time</u> (🤖Automated)</h3>\n" >> README.md
