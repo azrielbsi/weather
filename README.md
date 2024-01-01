@@ -1,9 +1,9 @@
 # <h1 align='center'><img height='35' src='images/cloud.png'> Daily Weather Report <img height='40' src='images/cloud.png'></h1>
-<h3 align='center'>🕒 Indonesian Time(UTC+7.00): <u>2024-01-01 07:45:27 WIB</u> (🤖Automated)</h3>
+<h3 align='center'>🕒 Indonesian Time(UTC+7.00): <u>2024-01-01 07:49:08 WIB</u> (🤖Automated)</h3>
 
 <table align='center'>
 <tr>
-<td align='center'><img src='images/placeholder.png' height='18'> <b>Depok</b><br><b>Latitude: -6.4 Longitude: 106.8186</b><br><img src='images/thermometer.png' height='18'> <b>28.05°C</b><br><img src='https://openweathermap.org/img/w/50d.png' height='50'><br><b>Mist</b><br><b>(mist)</b><br><b>Feels Like: 34.09°C</b><br><b>Wind Direction: North-Northwest</b></td>
+<td align='center'><img src='images/placeholder.png' height='18'> <b>Depok</b><br><b>Latitude: -6.4 Longitude: 106.8186</b><br><img src='images/thermometer.png' height='18'> <b>28.05°C</b><br><img src='https://openweathermap.org/img/w/50d.png' height='50'><br><b>Mist</b><br><b>(mist)</b><br><b>Feels Like: 34.09°C</b><br><b>Wind Direction: Unknown</b></td>
 </tr>
 <td>
 <table align=center>
@@ -35,8 +35,8 @@
 <h2 align=center><img src=images/clock.png height=25> Next 24 Hours</h2>
 <table align=center>
 <tr>
-<td align=center><b>28.61°C</b><br><img src='https://openweathermap.org/img/w/04d.png' height='50'><br><b>Clouds</b><br><b>10:00</b></td>
-<td align=center><b>30.19°C</b><br><img src='https://openweathermap.org/img/w/10d.png' height='50'><br><b>Rain</b><br><b>13:00</b></td>
+<td align=center><b>28.99°C</b><br><img src='https://openweathermap.org/img/w/04d.png' height='50'><br><b>Clouds</b><br><b>10:00</b></td>
+<td align=center><b>30.38°C</b><br><img src='https://openweathermap.org/img/w/10d.png' height='50'><br><b>Rain</b><br><b>13:00</b></td>
 <td align=center><b>29.58°C</b><br><img src='https://openweathermap.org/img/w/10d.png' height='50'><br><b>Rain</b><br><b>16:00</b></td>
 <td align=center><b>27.85°C</b><br><img src='https://openweathermap.org/img/w/10n.png' height='50'><br><b>Rain</b><br><b>19:00</b></td>
 <td align=center><b>27.39°C</b><br><img src='https://openweathermap.org/img/w/10n.png' height='50'><br><b>Rain</b><br><b>22:00</b></td>
