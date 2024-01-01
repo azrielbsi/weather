@@ -146,7 +146,7 @@ for ((i=0; i<8; i++)); do
 
         icon_url="https://openweathermap.org/img/w/${weather_icon_code}.png"
 
-        echo -e "<td align="center"><b>${forecast_temperature_celsius:-0}°C</b><br><img src='$icon_url' height='50'><br><b>$forecast_condition</b><br><b>${forecast_date_readable:11:5}</b><hr></td>" >> README.md        
+        echo -e "<td align="center"><img src='images/thermometer.png' height='18'> <b>${forecast_temperature_celsius:-0}°C</b><br><img src='$icon_url' height='50'><br><b>$forecast_condition</b><br><b>${forecast_date_readable:11:5}</b></td>" >> README.md        
     fi
 done
 
@@ -155,20 +155,19 @@ echo -e "</table>" >> README.md
 
 forecast_info=$(curl -s "http://api.openweathermap.org/data/2.5/forecast?q=${city_encoded}&cnt=5&appid=${OPENWEATHERMAP_API_KEY}")
 
-# Menampilkan informasi ramalan cuaca 5 hari ke dalam README.md
 echo "<h2>5-Day Forecast</h2>" >> README.md
-echo "<table>" >> README.md
+echo "<table align="center">" >> README.md
 echo "<tr>" >> README.md
 
 for ((i=0; i<5; i++)); do
     forecast_date_unix=$(echo "$forecast_info" | jq -r ".list[$i].dt")
     forecast_date_readable=$(date -d @$forecast_date_unix +'%Y-%m-%d')
 
-    forecast_condition=$(echo "$forecast_info" | jq -r ".list[$i].weather[0].description")
+    forecast_condition=$(echo "$forecast_info" | jq -r ".list[$i].weather[0].main")
     forecast_temperature_kelvin=$(echo "$forecast_info" | jq -r ".list[$i].main.temp")
     forecast_temperature_celsius=$(kelvin_to_celsius $forecast_temperature_kelvin)
 
-    echo "<td style='border: 1px solid #dddddd; padding: 8px;'>" >> README.md
+    echo "<td align="center">" >> README.md
     echo "<b>Date:</b> $forecast_date_readable<br>" >> README.md
     echo "<b>Condition:</b> $forecast_condition<br>" >> README.md
     echo "<b>Temperature:</b> ${forecast_temperature_celsius:-0}°C" >> README.md
