@@ -1,9 +1,9 @@
 # <h1 align='center'><img height='35' src='images/cloud.png'> Daily Weather Report <img height='40' src='images/cloud.png'></h1>
-<h3 align='center'>🕒 Indonesian Time(UTC+7.00): <u>2024-01-01 07:22:57 WIB</u> (🤖Automated)</h3>
+<h3 align='center'>🕒 Indonesian Time(UTC+7.00): <u>2024-01-01 07:27:55 WIB</u> (🤖Automated)</h3>
 
 <table align='center'>
 <tr>
-<td align='center'><img src='images/placeholder.png' height='18'> <b>Depok</b><br><b>Latitude: -6.4 Longitude: 106.8186</b><br><img src='images/thermometer.png' height='18'> <b>27.54°C</b><br><img src='https://openweathermap.org/img/w/50d.png' height='50'><br><b>Mist</b><br><b>(mist)</b><br><b>Feels Like: 32.91°C</b><br><b>Wind Direction: North-Northwest</b></td>
+<td align='center'><img src='images/placeholder.png' height='18'> <b>Depok</b><br><b>Latitude: -6.4 Longitude: 106.8186</b><br><img src='images/thermometer.png' height='18'> <b>27.61°C</b><br><img src='https://openweathermap.org/img/w/50d.png' height='50'><br><b>Mist</b><br><b>(mist)</b><br><b>Feels Like: 33.14°C</b><br><b>Wind Direction: North-Northwest</b></td>
 </tr>
 <td>
 <table align=center>
@@ -12,7 +12,7 @@
 </tr>
 <tr>
 <td align='center'><img src='images/fast.png' height='25'><br>Minimum<br>Temperature:<br><b>25.55°C</b></td>
-<td align='center'><img src='images/fast.png' height='25'><br>Maximum<br>Temperature:<br><b>28.69°C</b></td>
+<td align='center'><img src='images/fast.png' height='25'><br>Maximum<br>Temperature:<br><b>29.23°C</b></td>
 </tr>
 <tr>
 <td align='center'><img src='images/humidity.png' height='25'><br>Humidity:<br><b>94%</b></td>
@@ -35,8 +35,8 @@
 <h2 align=center><img src=images/clock.png height=25> Next 24 Hours</h2>
 <table align=center>
 <tr>
-<td align=center><b>27.79°C</b><br><img src='https://openweathermap.org/img/w/04d.png' height='50'><br><b>Clouds</b><br><b>10:00</b></td>
-<td align=center><b>29.78°C</b><br><img src='https://openweathermap.org/img/w/10d.png' height='50'><br><b>Rain</b><br><b>13:00</b></td>
+<td align=center><b>28.32°C</b><br><img src='https://openweathermap.org/img/w/04d.png' height='50'><br><b>Clouds</b><br><b>10:00</b></td>
+<td align=center><b>30.04°C</b><br><img src='https://openweathermap.org/img/w/10d.png' height='50'><br><b>Rain</b><br><b>13:00</b></td>
 <td align=center><b>29.58°C</b><br><img src='https://openweathermap.org/img/w/10d.png' height='50'><br><b>Rain</b><br><b>16:00</b></td>
 <td align=center><b>27.85°C</b><br><img src='https://openweathermap.org/img/w/10n.png' height='50'><br><b>Rain</b><br><b>19:00</b></td>
 <td align=center><b>27.39°C</b><br><img src='https://openweathermap.org/img/w/10n.png' height='50'><br><b>Rain</b><br><b>22:00</b></td>
@@ -46,31 +46,31 @@
 </tr>
 </table>
 <h2>5-Day Forecast</h2>
-<table align=center>
+<table>
 <tr>
-<td align=center>
+<td style='border: 1px solid #dddddd; padding: 8px;'>
 <b>Date:</b> 2024-01-01<br>
-<b>Condition:</b> Clouds<br>
-<b>Temperature:</b> 28.27°C
+<b>Condition:</b> broken clouds<br>
+<b>Temperature:</b> 28.32°C
 </td>
-<td align=center>
+<td style='border: 1px solid #dddddd; padding: 8px;'>
 <b>Date:</b> 2024-01-01<br>
-<b>Condition:</b> Rain<br>
-<b>Temperature:</b> 30.02°C
+<b>Condition:</b> light rain<br>
+<b>Temperature:</b> 30.04°C
 </td>
-<td align=center>
+<td style='border: 1px solid #dddddd; padding: 8px;'>
 <b>Date:</b> 2024-01-01<br>
-<b>Condition:</b> Rain<br>
+<b>Condition:</b> light rain<br>
 <b>Temperature:</b> 29.58°C
 </td>
-<td align=center>
+<td style='border: 1px solid #dddddd; padding: 8px;'>
 <b>Date:</b> 2024-01-01<br>
-<b>Condition:</b> Rain<br>
+<b>Condition:</b> moderate rain<br>
 <b>Temperature:</b> 27.85°C
 </td>
-<td align=center>
+<td style='border: 1px solid #dddddd; padding: 8px;'>
 <b>Date:</b> 2024-01-01<br>
-<b>Condition:</b> Rain<br>
+<b>Condition:</b> light rain<br>
 <b>Temperature:</b> 27.39°C
 </td>
 </tr>
