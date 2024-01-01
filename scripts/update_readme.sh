@@ -57,37 +57,39 @@ wind_direction_text() {
     local degree=$1
 
     if (( $degree >= 348.75 || $degree < 11.25 )); then
-        echo "North"
+        echo "North (N)"
     elif (( $degree >= 11.25 && $degree < 33.75 )); then
-        echo "North-Northeast"
+        echo "North-Northeast (NNE)"
     elif (( $degree >= 33.75 && $degree < 56.25 )); then
-        echo "Northeast"
+        echo "Northeast (NE)"
     elif (( $degree >= 56.25 && $degree < 78.75 )); then
-        echo "East-Northeast"
+        echo "East-Northeast (ENE)"
     elif (( $degree >= 78.75 && $degree < 101.25 )); then
-        echo "East"
+        echo "East (E)"
     elif (( $degree >= 101.25 && $degree < 123.75 )); then
-        echo "East-Southeast"
+        echo "East-Southeast (ESE)"
     elif (( $degree >= 123.75 && $degree < 146.25 )); then
-        echo "Southeast"
+        echo "Southeast (SE)"
     elif (( $degree >= 146.25 && $degree < 168.75 )); then
-        echo "South-Southeast"
+        echo "South-Southeast (SSE)"
     elif (( $degree >= 168.75 && $degree < 191.25 )); then
-        echo "South"
+        echo "South (S)"
     elif (( $degree >= 191.25 && $degree < 213.75 )); then
-        echo "South-Southwest"
+        echo "South-Southwest (SSW)"
     elif (( $degree >= 213.75 && $degree < 236.25 )); then
-        echo "Southwest"
+        echo "Southwest (SW)"
     elif (( $degree >= 236.25 && $degree < 258.75 )); then
-        echo "West-Southwest"
+        echo "West-Southwest (WSW)"
     elif (( $degree >= 258.75 && $degree < 281.25 )); then
-        echo "West"
+        echo "West (W)"
     elif (( $degree >= 281.25 && $degree < 303.75 )); then
-        echo "West-Northwest"
+        echo "West-Northwest (WNW)"
     elif (( $degree >= 303.75 && $degree < 326.25 )); then
-        echo "Northwest"
+        echo "Northwest (NW)"
+    elif (( $degree >= 326.25 && $degree < 348.75 )); then
+        echo "North-Northwest (NNW)"
     else
-        echo "North-Northwest"
+        echo "Unknown"
     fi
 }
 wind_direction_text=$(wind_direction_text $wind_direction)
