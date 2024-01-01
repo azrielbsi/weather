@@ -1,9 +1,9 @@
 # <h1 align='center'><img height='35' src='images/cloud.png'> Daily Weather Report <img height='40' src='images/cloud.png'></h1>
-<h3 align='center'>🕒 Indonesian Time(UTC+7.00): <u>2024-01-01 07:32:43 WIB</u> (🤖Automated)</h3>
+<h3 align='center'>🕒 Indonesian Time(UTC+7.00): <u>2024-01-01 07:34:27 WIB</u> (🤖Automated)</h3>
 
 <table align='center'>
 <tr>
-<td align='center'><img src='images/placeholder.png' height='18'> <b>Depok</b><br><b>Latitude: -6.4 Longitude: 106.8186</b><br><img src='images/thermometer.png' height='18'> <b>27.61°C</b><br><img src='https://openweathermap.org/img/w/50d.png' height='50'><br><b>Mist</b><br><b>(mist)</b><br><b>Feels Like: 32.99°C</b><br><b>Wind Direction: North-Northwest</b></td>
+<td align='center'><img src='images/placeholder.png' height='18'> <b>Depok</b><br><b>Latitude: -6.4 Longitude: 106.8186</b><br><img src='images/thermometer.png' height='18'> <b>27.61°C</b><br><img src='https://openweathermap.org/img/w/50d.png' height='50'><br><b>Mist</b><br><b>(mist)</b><br><b>Feels Like: 33.14°C</b><br><b>Wind Direction: North-Northwest</b></td>
 </tr>
 <td>
 <table align=center>
@@ -15,7 +15,7 @@
 <td align='center'><img src='images/fast.png' height='25'><br>Maximum<br>Temperature:<br><b>29.23°C</b></td>
 </tr>
 <tr>
-<td align='center'><img src='images/humidity.png' height='25'><br>Humidity:<br><b>93%</b></td>
+<td align='center'><img src='images/humidity.png' height='25'><br>Humidity:<br><b>94%</b></td>
 <td align='center'><img src='images/atmospheric.png' height='25'><br>Atmospheric<br>Pressure:<br><b>1006 hPa</b></td>
 </tr>
 <tr>
@@ -45,3 +45,24 @@
 <td align=center><b>26.73°C</b><br><img src='https://openweathermap.org/img/w/10d.png' height='50'><br><b>Rain</b><br><b>07:00</b></td>
 </tr>
 </table>
+<h2>5-Day Forecast</h2>
+<b>Date:</b> 2024-01-01
+<b>Condition:</b> broken clouds
+<b>Temperature:</b> 28.32°C
+<hr>
+<b>Date:</b> 
+<b>Condition:</b> null
+<b>Temperature:</b> -273.15°C
+<hr>
+<b>Date:</b> 
+<b>Condition:</b> null
+<b>Temperature:</b> -273.15°C
+<hr>
+<b>Date:</b> 
+<b>Condition:</b> null
+<b>Temperature:</b> -273.15°C
+<hr>
+<b>Date:</b> 
+<b>Condition:</b> null
+<b>Temperature:</b> -273.15°C
+<hr>
