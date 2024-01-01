@@ -132,11 +132,11 @@ echo -e "</table>" >> README.md
 echo "<h2 align="center"><img src="images/clock.png" height="25"> Next 24 Hours</h2>" >> README.md
 
 current_time=$(date +'%Y-%m-%d %H:%M:%S')
-twenty_four_hours_later=$(date -d "+48 hours" +'%Y-%m-%d %H:%M:%S')
+twenty_four_hours_later=$(date -d "+24 hours" +'%Y-%m-%d %H:%M:%S')
 echo -e "<table align="center">" >> README.md
 echo -e "<tr>" >> README.md
 
-for ((i=0; i<16; i++)); do
+for ((i=0; i<8; i++)); do
     forecast_date_unix=$(echo "$forecast_24h_info" | jq -r ".list[$i].dt")
     forecast_date_readable=$(date -d @$forecast_date_unix +'%Y-%m-%d %H:%M:%S')
 
