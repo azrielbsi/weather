@@ -1,5 +1,5 @@
 # <h1 align='center'><img height='35' src='images/cloud.png'> Daily Weather Report <img height='40' src='images/cloud.png'></h1>
-<h3 align='center'>🕒 Indonesian Time(UTC+7.00): <u>2024-01-01 07:04:38 WIB</u> (🤖Automated)</h3>
+<h3 align='center'>🕒 Indonesian Time(UTC+7.00): <u>2024-01-01 07:06:10 WIB</u> (🤖Automated)</h3>
 
 <table align='center'>
 <tr>
@@ -46,23 +46,37 @@
 </tr>
 </table>
 <h2>5-Day Forecast</h2>
-<h3>2024-01-01</h3>
-<p><b>Condition:</b> broken clouds</p>
-<p><b>Temperature:</b> 28.07°C</p>
+<table style='border-collapse: collapse;'>
+<tr>
+<td style='border: 1px solid #dddddd; padding: 8px;'>
+<h3></h3>
+<p><b>Condition:</b> </p>
+<p><b>Temperature:</b> -273.15°C</p>
 <hr>
-<h3>2024-01-01</h3>
-<p><b>Condition:</b> light rain</p>
-<p><b>Temperature:</b> 30.13°C</p>
+</td>
+<td style='border: 1px solid #dddddd; padding: 8px;'>
+<h3></h3>
+<p><b>Condition:</b> </p>
+<p><b>Temperature:</b> -273.15°C</p>
 <hr>
-<h3>2024-01-01</h3>
-<p><b>Condition:</b> light rain</p>
-<p><b>Temperature:</b> 30.24°C</p>
+</td>
+<td style='border: 1px solid #dddddd; padding: 8px;'>
+<h3></h3>
+<p><b>Condition:</b> </p>
+<p><b>Temperature:</b> -273.15°C</p>
 <hr>
-<h3>2024-01-01</h3>
-<p><b>Condition:</b> moderate rain</p>
-<p><b>Temperature:</b> 28.98°C</p>
+</td>
+<td style='border: 1px solid #dddddd; padding: 8px;'>
+<h3></h3>
+<p><b>Condition:</b> </p>
+<p><b>Temperature:</b> -273.15°C</p>
 <hr>
-<h3>2024-01-01</h3>
-<p><b>Condition:</b> overcast clouds</p>
-<p><b>Temperature:</b> 28.37°C</p>
+</td>
+<td style='border: 1px solid #dddddd; padding: 8px;'>
+<h3></h3>
+<p><b>Condition:</b> </p>
+<p><b>Temperature:</b> -273.15°C</p>
 <hr>
+</td>
+</tr>
+</table>
