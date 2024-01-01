@@ -153,6 +153,26 @@ done
 echo -e "</tr>" >> README.md
 echo -e "</table>" >> README.md
 
+forecast_info=$(curl -s "http://api.openweathermap.org/data/2.5/forecast?q=${city_encoded}&cnt=5&appid=${OPENWEATHERMAP_API_KEY}")
+
+# Menampilkan informasi ramalan cuaca 5 hari ke dalam README.md
+echo "<h2>5-Day Forecast</h2>" >> README.md
+
+for ((i=0; i<5; i++)); do
+    index=$((i*8))
+    forecast_date_unix=$(echo "$forecast_info" | jq -r ".list[$index].dt")
+    forecast_date_readable=$(date -d @$forecast_date_unix +'%Y-%m-%d')
+
+    forecast_condition=$(echo "$forecast_info" | jq -r ".list[$index].weather[0].description")
+    forecast_temperature_kelvin=$(echo "$forecast_info" | jq -r ".list[$index].main.temp")
+    forecast_temperature_celsius=$(kelvin_to_celsius $forecast_temperature_kelvin)
+
+    echo "<b>Date:</b> $forecast_date_readable" >> README.md
+    echo "<b>Condition:</b> $forecast_condition" >> README.md
+    echo "<b>Temperature:</b> ${forecast_temperature_celsius:-0}°C" >> README.md
+    echo "<hr>" >> README.md
+done
+
 git config --global user.email "action@github.com"
 git config --global user.name "GitHub Action"
 
