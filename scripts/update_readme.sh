@@ -56,37 +56,37 @@ wind_direction=$(echo "$weather_info" | jq -r '.wind.deg')
 wind_direction_text() {
     local degree=$1
 
-    if (( $degree >= 348.75 || $degree < 11.25 )); then
+    if (( $(echo "$degree >= 348.75" | bc -l) || $(echo "$degree < 11.25" | bc -l) )); then
         echo "North (N)"
-    elif (( $degree >= 11.25 && $degree < 33.75 )); then
+    elif (( $(echo "$degree >= 11.25" | bc -l) && $(echo "$degree < 33.75" | bc -l) )); then
         echo "North-Northeast (NNE)"
-    elif (( $degree >= 33.75 && $degree < 56.25 )); then
+    elif (( $(echo "$degree >= 33.75" | bc -l) && $(echo "$degree < 56.25" | bc -l) )); then
         echo "Northeast (NE)"
-    elif (( $degree >= 56.25 && $degree < 78.75 )); then
+    elif (( $(echo "$degree >= 56.25" | bc -l) && $(echo "$degree < 78.75" | bc -l) )); then
         echo "East-Northeast (ENE)"
-    elif (( $degree >= 78.75 && $degree < 101.25 )); then
+    elif (( $(echo "$degree >= 78.75" | bc -l) && $(echo "$degree < 101.25" | bc -l) )); then
         echo "East (E)"
-    elif (( $degree >= 101.25 && $degree < 123.75 )); then
+    elif (( $(echo "$degree >= 101.25" | bc -l) && $(echo "$degree < 123.75" | bc -l) )); then
         echo "East-Southeast (ESE)"
-    elif (( $degree >= 123.75 && $degree < 146.25 )); then
+    elif (( $(echo "$degree >= 123.75" | bc -l) && $(echo "$degree < 146.25" | bc -l) )); then
         echo "Southeast (SE)"
-    elif (( $degree >= 146.25 && $degree < 168.75 )); then
+    elif (( $(echo "$degree >= 146.25" | bc -l) && $(echo "$degree < 168.75" | bc -l) )); then
         echo "South-Southeast (SSE)"
-    elif (( $degree >= 168.75 && $degree < 191.25 )); then
+    elif (( $(echo "$degree >= 168.75" | bc -l) && $(echo "$degree < 191.25" | bc -l) )); then
         echo "South (S)"
-    elif (( $degree >= 191.25 && $degree < 213.75 )); then
+    elif (( $(echo "$degree >= 191.25" | bc -l) && $(echo "$degree < 213.75" | bc -l) )); then
         echo "South-Southwest (SSW)"
-    elif (( $degree >= 213.75 && $degree < 236.25 )); then
+    elif (( $(echo "$degree >= 213.75" | bc -l) && $(echo "$degree < 236.25" | bc -l) )); then
         echo "Southwest (SW)"
-    elif (( $degree >= 236.25 && $degree < 258.75 )); then
+    elif (( $(echo "$degree >= 236.25" | bc -l) && $(echo "$degree < 258.75" | bc -l) )); then
         echo "West-Southwest (WSW)"
-    elif (( $degree >= 258.75 && $degree < 281.25 )); then
+    elif (( $(echo "$degree >= 258.75" | bc -l) && $(echo "$degree < 281.25" | bc -l) )); then
         echo "West (W)"
-    elif (( $degree >= 281.25 && $degree < 303.75 )); then
+    elif (( $(echo "$degree >= 281.25" | bc -l) && $(echo "$degree < 303.75" | bc -l) )); then
         echo "West-Northwest (WNW)"
-    elif (( $degree >= 303.75 && $degree < 326.25 )); then
+    elif (( $(echo "$degree >= 303.75" | bc -l) && $(echo "$degree < 326.25" | bc -l) )); then
         echo "Northwest (NW)"
-    elif (( $degree >= 326.25 && $degree < 348.75 )); then
+    elif (( $(echo "$degree >= 326.25" | bc -l) && $(echo "$degree < 348.75" | bc -l) )); then
         echo "North-Northwest (NNW)"
     else
         echo "Unknown"
