@@ -94,7 +94,7 @@ wind_direction_text() {
 }
 wind_direction_text=$(wind_direction_text $wind_direction)
 weather_description_with_wind="Wind Direction: ${wind_direction_text:-Unknown}"
-forecast_24h_info=$(curl -s "http://api.openweathermap.org/data/2.5/forecast?q=${city_encoded}&cnt=30&appid=${OPENWEATHERMAP_API_KEY}")
+forecast_24h_info=$(curl -s "http://api.openweathermap.org/data/2.5/forecast?q=${city_encoded}&cnt=8&appid=${OPENWEATHERMAP_API_KEY}")
 
 echo "# <h1 align='center'><img height='35' src='images/cloud.png'> Daily Weather Report <img height='40' src='images/cloud.png'></h1>" > README.md
 echo -e "<h3 align='center'>🕒 Indonesian Time(UTC$(printf "%+.2f" "$(bc <<< "scale=2; $timezone / 3600")")): <u>$time</u> (🤖Automated)</h3>\n" >> README.md
@@ -129,20 +129,18 @@ echo -e "<td align='center'><img src='images/sunsets.png' height='25'><br>Sunset
 echo -e "</tr>" >> README.md
 echo -e "</table>" >> README.md
 echo -e "</table>" >> README.md
-echo "<h2 align='center'><img src='images/clock.png' height='25'> Next 24 Hours</h2>" >> README.md
+echo "<h2 align="center"><img src="images/clock.png" height="25"> Next 24 Hours</h2>" >> README.md
 
 current_time=$(date +'%Y-%m-%d %H:%M:%S')
 twenty_four_hours_later=$(date -d "+24 hours" +'%Y-%m-%d %H:%M:%S')
-echo -e "<table align='center'>" >> README.md
+echo -e "<table align="center">" >> README.md
 echo -e "<tr>" >> README.md
 
-forecast_count=0
-
-for ((i=0; i<30; i++)); do
+for ((i=0; i<8; i++)); do
     forecast_date_unix=$(echo "$forecast_24h_info" | jq -r ".list[$i].dt")
     forecast_date_readable=$(date -d @$forecast_date_unix +'%Y-%m-%d %H:%M:%S')
 
-    if [[ $forecast_date_readable > $current_time && $forecast_date_readable < $twenty_four_hours_later && $forecast_count -lt 9 ]]; then
+    if [[ $forecast_date_readable > $current_time && $forecast_date_readable < $twenty_four_hours_later ]]; then
         forecast_condition=$(echo "$forecast_24h_info" | jq -r ".list[$i].weather[0].main")
         forecast_temperature_kelvin=$(echo "$forecast_24h_info" | jq -r ".list[$i].main.temp")
         forecast_temperature_celsius=$(kelvin_to_celsius $forecast_temperature_kelvin)
@@ -150,8 +148,7 @@ for ((i=0; i<30; i++)); do
 
         icon_url="https://openweathermap.org/img/w/${weather_icon_code}.png"
 
-        echo -e "<td align='center'><b>${forecast_temperature_celsius:-0}°C</b><br><img src='$icon_url' height='50'><br><b>$forecast_condition</b><br><b>${forecast_date_readable:11:5}</b></td>" >> README.md
-        ((forecast_count++))
+        echo -e "<td align="center"><b>${forecast_temperature_celsius:-0}°C</b><br><img src='$icon_url' height='50'><br><b>$forecast_condition</b><br><b>${forecast_date_readable:11:5}</b></td>" >> README.md        
     fi
 done
 
