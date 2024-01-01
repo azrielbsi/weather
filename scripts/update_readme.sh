@@ -132,7 +132,7 @@ echo -e "</table>" >> README.md
 echo "<h2 align="center"><img src="images/clock.png" height="25"> Next 24 Hours</h2>" >> README.md
 
 current_time=$(date +'%Y-%m-%d %H:%M:%S')
-twenty_four_hours_later=$(date -d "+24 hours" +'%Y-%m-%d %H:%M:%S')
+twenty_four_hours_later=$(date -d "+48 hours" +'%Y-%m-%d %H:%M:%S')
 echo -e "<table align="center">" >> README.md
 echo -e "<tr>" >> README.md
 
