@@ -55,42 +55,41 @@ coord_lat=$(echo "$weather_info" | jq -r '.coord.lat')
 wind_direction=$(echo "$weather_info" | jq -r '.wind.deg')
 wind_direction_text() {
     local degree=$1
-    local wind_speed=$2
 
     if (( $(echo "$degree >= 348.75" | bc -l) || $(echo "$degree < 11.25" | bc -l) )); then
-        echo "North - $wind_speed"
+        echo "North"
     elif (( $(echo "$degree >= 11.25" | bc -l) && $(echo "$degree < 33.75" | bc -l) )); then
-        echo "North-Northeast - $wind_speed"
+        echo "North-Northeast"
     elif (( $(echo "$degree >= 33.75" | bc -l) && $(echo "$degree < 56.25" | bc -l) )); then
-        echo "Northeast - $wind_speed"
+        echo "Northeast"
     elif (( $(echo "$degree >= 56.25" | bc -l) && $(echo "$degree < 78.75" | bc -l) )); then
-        echo "East-Northeast - $wind_speed"
+        echo "East-Northeast"
     elif (( $(echo "$degree >= 78.75" | bc -l) && $(echo "$degree < 101.25" | bc -l) )); then
-        echo "East - $wind_speed"
+        echo "East"
     elif (( $(echo "$degree >= 101.25" | bc -l) && $(echo "$degree < 123.75" | bc -l) )); then
-        echo "East-Southeast - $wind_speed"
+        echo "East-Southeast"
     elif (( $(echo "$degree >= 123.75" | bc -l) && $(echo "$degree < 146.25" | bc -l) )); then
-        echo "Southeast - $wind_speed"
+        echo "Southeast"
     elif (( $(echo "$degree >= 146.25" | bc -l) && $(echo "$degree < 168.75" | bc -l) )); then
-        echo "South-Southeast - $wind_speed"
+        echo "South-Southeast"
     elif (( $(echo "$degree >= 168.75" | bc -l) && $(echo "$degree < 191.25" | bc -l) )); then
-        echo "South - $wind_speed"
+        echo "South"
     elif (( $(echo "$degree >= 191.25" | bc -l) && $(echo "$degree < 213.75" | bc -l) )); then
-        echo "South-Southwest - $wind_speed"
+        echo "South-Southwest"
     elif (( $(echo "$degree >= 213.75" | bc -l) && $(echo "$degree < 236.25" | bc -l) )); then
-        echo "Southwest - $wind_speed"
+        echo "Southwest"
     elif (( $(echo "$degree >= 236.25" | bc -l) && $(echo "$degree < 258.75" | bc -l) )); then
-        echo "West-Southwest - $wind_speed"
+        echo "West-Southwest"
     elif (( $(echo "$degree >= 258.75" | bc -l) && $(echo "$degree < 281.25" | bc -l) )); then
-        echo "West - $wind_speed"
+        echo "West"
     elif (( $(echo "$degree >= 281.25" | bc -l) && $(echo "$degree < 303.75" | bc -l) )); then
-        echo "West-Northwest - $wind_speed"
+        echo "West-Northwest"
     elif (( $(echo "$degree >= 303.75" | bc -l) && $(echo "$degree < 326.25" | bc -l) )); then
-        echo "Northwest - $wind_speed"
+        echo "Northwest"
     elif (( $(echo "$degree >= 326.25" | bc -l) && $(echo "$degree < 348.75" | bc -l) )); then
-        echo "North-Northwest - $wind_speed"
+        echo "North-Northwest"
     else
-        echo "Unknown - $wind_speed"
+        echo "Unknown"
     fi
 }
 wind_direction_text=$(wind_direction_text $wind_direction)
