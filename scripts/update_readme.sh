@@ -155,7 +155,7 @@ done
 echo -e "</tr>" >> README.md
 echo -e "</table>" >> README.md
 
-git config --global user.email "19215261@gbsi.ac.id"
+git config --global user.email "19215261@bsi.ac.id"
 git config --global user.name "${{ github.repository_owner }}"
 
 git add README.md
