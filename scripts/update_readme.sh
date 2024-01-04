@@ -155,8 +155,7 @@ done
 echo -e "</tr>" >> README.md
 echo -e "</table>" >> README.md
 echo -e "<h2>📄 License</h2>" >> README.md
-echo -e "<li>Powered by: <a href="https://github.com/azrielbsi/weather">weather</a></li>" >> README.md
-echo -e "<li>© Copyright: <a href="https://github.com/azrielbsi">azrielbsi</a></li>" >> README.md
+echo -e "<li>Powered by: <a href="https://github.com/azrielbsi/weather">Daily-Weather-Report</a></li>" >> README.md
 echo -e "<li><a href="https://github.com/azrielbsi/weather/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-MIT-yellow.svg"></a></li>" >> README.md
 
 git config --global user.email "19215261@bsi.ac.id"
