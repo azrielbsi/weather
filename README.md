@@ -1,5 +1,5 @@
 # <h1 align='center'><img height='35' src='images/cloud.png'> Daily Weather Report <img height='40' src='images/cloud.png'></h1>
-<h3 align='center'>🕒 Indonesian Time(UTC+7.00): <u>2024-01-04 11:00:31 WIB</u> (🤖Automated)</h3>
+<h3 align='center'>🕒 Indonesian Time(UTC+7.00): <u>2024-01-04 11:03:34 WIB</u> (🤖Automated)</h3>
 
 <table align='center'>
 <tr>
@@ -46,4 +46,4 @@
 </tr>
 </table>
 <h2>License</h2>
-[<img src=https://img.shields.io/badge/License-MIT-yellow.svg>](https://opensource.org/licenses/MIT)
+<a href=https://opensource.org/licenses/MIT><img src=https://img.shields.io/badge/License-MIT-yellow.svg></a>
