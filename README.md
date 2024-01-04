@@ -1,5 +1,5 @@
 # <h1 align='center'><img height='35' src='images/cloud.png'> Daily Weather Report <img height='40' src='images/cloud.png'></h1>
-<h3 align='center'>🕒 Indonesian Time(UTC+7.00): <u>2024-01-04 11:14:09 WIB</u> (🤖Automated)</h3>
+<h3 align='center'>🕒 Indonesian Time(UTC+7.00): <u>2024-01-04 11:15:21 WIB</u> (🤖Automated)</h3>
 
 <table align='center'>
 <tr>
@@ -45,5 +45,6 @@
 <td align=center><b>24.75°C</b><br><img src='https://openweathermap.org/img/w/10d.png' height='50'><br><b>Rain</b><br><b>10:00</b></td>
 </tr>
 </table>
-<h2>License</h2>
-<a href=https://opensource.org/licenses/MIT><img src=https://img.shields.io/badge/License-MIT-yellow.svg></a>
+<h2>📄 License</h2>
+- Powered by: <a href=https://github.com/azrielbsi/weather>Daily-Weather-Report</a>
+- <a href=https://opensource.org/licenses/MIT><img src=https://img.shields.io/badge/License-MIT-yellow.svg></a> © <a href=https://github.com/azrielbsi/weather>Daily-Weather-Report</a>
