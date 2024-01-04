@@ -154,6 +154,8 @@ done
 
 echo -e "</tr>" >> README.md
 echo -e "</table>" >> README.md
+echo -e "## License" >> README.md
+echo -e "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)" >> README.md
 
 git config --global user.email "19215261@bsi.ac.id"
 git config --global user.name "${{ github.repository_owner }}"
