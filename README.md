@@ -1,5 +1,5 @@
 # <h1 align='center'><img height='35' src='images/cloud.png'> Daily Weather Report <img height='40' src='images/cloud.png'></h1>
-<h3 align='center'>🕒 Indonesian Time(UTC+7.00): <u>2024-01-04 11:17:59 WIB</u> (🤖Automated)</h3>
+<h3 align='center'>🕒 Indonesian Time(UTC+7.00): <u>2024-01-04 11:20:08 WIB</u> (🤖Automated)</h3>
 
 <table align='center'>
 <tr>
@@ -46,6 +46,5 @@
 </tr>
 </table>
 <h2>📄 License</h2>
-Powered by: <a href=https://github.com/azrielbsi/weather>Daily-Weather-Report</a>
-
-<a href=https://opensource.org/licenses/MIT><img src=https://img.shields.io/badge/License-MIT-yellow.svg></a>
+- Powered by: <a href=https://github.com/azrielbsi/weather>Daily-Weather-Report</a>
+- <a href=https://opensource.org/licenses/MIT><img src=https://img.shields.io/badge/License-MIT-yellow.svg></a>
