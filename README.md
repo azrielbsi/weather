@@ -2,11 +2,11 @@
 <p align=center><img align=center height='80' src=https://openweathermap.org/themes/openweathermap/assets/img/logo_white_cropped.png></p>
 
 <p align=center><img align=center src=https://github.com/azrielbsi/weather/actions/workflows/weather.yml/badge.svg> <img align=center src=https://github.com/Julius-Ulee/github-profile-views-counter/blob/master/svg/736731255/badge.svg> <img height='20' align=center src=https://github.com/Julius-Ulee/github-profile-views-counter/blob/master/graph/736731255/small/week.png></p>
-<h3 align='center'>🕒 Indonesian Time(UTC+7.00): <u>2024-01-08 02:08:54 WIB</u> (🤖Automated)</h3>
+<h3 align='center'>🕒 Indonesian Time(UTC+7.00): <u>2024-01-08 03:11:42 WIB</u> (🤖Automated)</h3>
 
 <table align='center'>
 <tr>
-<td align='center'><img src='images/placeholder.png' height='18'> <b>Depok</b><br><b>Latitude: -6.4 Longitude: 106.8186</b><br><img src='images/thermometer.png' height='18'> <b>26.06°C</b><br><img src='https://openweathermap.org/img/w/04n.png' height='50'><br><b>Clouds</b><br><b>(overcast clouds)</b><br><b>Feels Like: 26.06°C</b><br><b>Wind Direction: Southwest</b></td>
+<td align='center'><img src='images/placeholder.png' height='18'> <b>Depok</b><br><b>Latitude: -6.4 Longitude: 106.8186</b><br><img src='images/thermometer.png' height='18'> <b>26.06°C</b><br><img src='https://openweathermap.org/img/w/04n.png' height='50'><br><b>Clouds</b><br><b>(overcast clouds)</b><br><b>Feels Like: 26.06°C</b><br><b>Wind Direction: West</b></td>
 </tr>
 <td>
 <table align=center>
@@ -18,12 +18,12 @@
 <td align='center'><img src='images/fast.png' height='25'><br>Maximum<br>Temperature:<br><b>28.12°C</b></td>
 </tr>
 <tr>
-<td align='center'><img src='images/humidity.png' height='25'><br>Humidity:<br><b>96%</b></td>
+<td align='center'><img src='images/humidity.png' height='25'><br>Humidity:<br><b>95%</b></td>
 <td align='center'><img src='images/atmospheric.png' height='25'><br>Atmospheric<br>Pressure:<br><b>1009 hPa</b></td>
 </tr>
 <tr>
-<td align='center'><img src='images/air-flow.png' height='25'><br>Wind Speed:<br><b>0.62 m/s</b><br>Wind Gust Speed:<br><b>0.96 m/s</b></td>
-<td align='center'><img src='images/anemometer.png' height='25'><br>Wind Direction:<br><b>224°</b></td>
+<td align='center'><img src='images/air-flow.png' height='25'><br>Wind Speed:<br><b>0.53 m/s</b><br>Wind Gust Speed:<br><b>0.82 m/s</b></td>
+<td align='center'><img src='images/anemometer.png' height='25'><br>Wind Direction:<br><b>260°</b></td>
 </tr>
 <tr>
 <td align='center'><img src='images/cloudy.png' height='25'><br>Cloudiness:<br><b>100%</b></td>
@@ -38,9 +38,9 @@
 <h2 align=center><img src=images/clock.png height=25> Next 24 Hours</h2>
 <table align=center>
 <tr>
-<td align=center><b>25.85°C</b><br><img src='https://openweathermap.org/img/w/04n.png' height='50'><br><b>Clouds</b><br><b>04:00</b></td>
-<td align=center><b>25.95°C</b><br><img src='https://openweathermap.org/img/w/04d.png' height='50'><br><b>Clouds</b><br><b>07:00</b></td>
-<td align=center><b>28.88°C</b><br><img src='https://openweathermap.org/img/w/10d.png' height='50'><br><b>Rain</b><br><b>10:00</b></td>
+<td align=center><b>26.06°C</b><br><img src='https://openweathermap.org/img/w/04n.png' height='50'><br><b>Clouds</b><br><b>04:00</b></td>
+<td align=center><b>26.00°C</b><br><img src='https://openweathermap.org/img/w/04d.png' height='50'><br><b>Clouds</b><br><b>07:00</b></td>
+<td align=center><b>27.94°C</b><br><img src='https://openweathermap.org/img/w/10d.png' height='50'><br><b>Rain</b><br><b>10:00</b></td>
 <td align=center><b>30.13°C</b><br><img src='https://openweathermap.org/img/w/10d.png' height='50'><br><b>Rain</b><br><b>13:00</b></td>
 <td align=center><b>27.81°C</b><br><img src='https://openweathermap.org/img/w/10d.png' height='50'><br><b>Rain</b><br><b>16:00</b></td>
 <td align=center><b>27.05°C</b><br><img src='https://openweathermap.org/img/w/10n.png' height='50'><br><b>Rain</b><br><b>19:00</b></td>
