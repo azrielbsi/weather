@@ -1,8 +1,8 @@
 # <h1 align='center'><img height='35' src='images/cloud.png'> Daily Weather Report <img height='40' src='images/cloud.png'></h1>
-<p align=center><img align=center height='40' src=https://openweathermap.org/themes/openweathermap/assets/img/logo_white_cropped.png></p>
+<p align=center><img align=center height='80' src=https://openweathermap.org/themes/openweathermap/assets/img/logo_white_cropped.png></p>
 
 <p align=center><img align=center src=https://github.com/azrielbsi/weather/actions/workflows/weather.yml/badge.svg> <img align=center src=https://github.com/Julius-Ulee/github-profile-views-counter/blob/master/svg/736731255/badge.svg> <img height='20' align=center src=https://github.com/Julius-Ulee/github-profile-views-counter/blob/master/graph/736731255/small/week.png></p>
-<h3 align='center'>🕒 Indonesian Time(UTC+7.00): <u>2024-01-07 10:12:15 WIB</u> (🤖Automated)</h3>
+<h3 align='center'>🕒 Indonesian Time(UTC+7.00): <u>2024-01-07 10:13:18 WIB</u> (🤖Automated)</h3>
 
 <table align='center'>
 <tr>
