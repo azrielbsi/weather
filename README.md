@@ -2,7 +2,7 @@
 <p align=center><img align=center height='40' src=https://openweathermap.org/themes/openweathermap/assets/img/logo_white_cropped.png></p>
 
 <p align=center><img align=center src=https://github.com/azrielbsi/weather/actions/workflows/weather.yml/badge.svg> <img align=center src=https://github.com/Julius-Ulee/github-profile-views-counter/blob/master/svg/736731255/badge.svg> <img height='20' align=center src=https://github.com/Julius-Ulee/github-profile-views-counter/blob/master/graph/736731255/small/week.png></p>
-<h3 align='center'>🕒 Indonesian Time(UTC+7.00): <u>2024-01-07 10:10:33 WIB</u> (🤖Automated)</h3>
+<h3 align='center'>🕒 Indonesian Time(UTC+7.00): <u>2024-01-07 10:12:15 WIB</u> (🤖Automated)</h3>
 
 <table align='center'>
 <tr>
@@ -38,8 +38,8 @@
 <h2 align=center><img src=images/clock.png height=25> Next 24 Hours</h2>
 <table align=center>
 <tr>
-<td align=center><b>30.83°C</b><br><img src='https://openweathermap.org/img/w/10d.png' height='50'><br><b>Rain</b><br><b>13:00</b></td>
-<td align=center><b>29.56°C</b><br><img src='https://openweathermap.org/img/w/10d.png' height='50'><br><b>Rain</b><br><b>16:00</b></td>
+<td align=center><b>30.85°C</b><br><img src='https://openweathermap.org/img/w/10d.png' height='50'><br><b>Rain</b><br><b>13:00</b></td>
+<td align=center><b>29.58°C</b><br><img src='https://openweathermap.org/img/w/10d.png' height='50'><br><b>Rain</b><br><b>16:00</b></td>
 <td align=center><b>26.91°C</b><br><img src='https://openweathermap.org/img/w/10n.png' height='50'><br><b>Rain</b><br><b>19:00</b></td>
 <td align=center><b>26.45°C</b><br><img src='https://openweathermap.org/img/w/10n.png' height='50'><br><b>Rain</b><br><b>22:00</b></td>
 <td align=center><b>26.00°C</b><br><img src='https://openweathermap.org/img/w/10n.png' height='50'><br><b>Rain</b><br><b>01:00</b></td>
