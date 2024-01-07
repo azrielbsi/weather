@@ -155,8 +155,8 @@ done
 echo -e "</tr>" >> README.md
 echo -e "</table>" >> README.md
 
-echo -e "<img align="center" src="https://openweathermap.org/themes/openweathermap/assets/img/logo_white_cropped.png">\n" REDME.md
-echo -e "<img align="center" src="https://github.com/azrielbsi/weather/actions/workflows/weather.yml/badge.svg"> <img align="center" src="https://github.com/Julius-Ulee/github-profile-views-counter/blob/master/svg/736731255/badge.svg"> <img align="center" src="https://github.com/Julius-Ulee/github-profile-views-counter/blob/master/graph/736731255/small/week.png">" README.md
+echo -e "<a><img align="center" src="https://openweathermap.org/themes/openweathermap/assets/img/logo_white_cropped.png"></a>\n" REDME.md
+echo -e "<a><img align="center" src="https://github.com/azrielbsi/weather/actions/workflows/weather.yml/badge.svg"> <img align="center" src="https://github.com/Julius-Ulee/github-profile-views-counter/blob/master/svg/736731255/badge.svg"> <img align="center" src="https://github.com/Julius-Ulee/github-profile-views-counter/blob/master/graph/736731255/small/week.png"></a>" README.md
 
 echo -e "<h2>📄 License</h2>" >> README.md
 echo -e "<li>Powered by: <a href="https://github.com/azrielbsi/weather">Daily-Weather-Report</a></li>" >> README.md
