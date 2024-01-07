@@ -97,6 +97,8 @@ weather_description_with_wind="Wind Direction: ${wind_direction_text:-Unknown}"
 forecast_24h_info=$(curl -s "http://api.openweathermap.org/data/2.5/forecast?q=${city_encoded}&cnt=8&appid=${OPENWEATHERMAP_API_KEY}")
 
 echo "# <h1 align='center'><img height='35' src='images/cloud.png'> Daily Weather Report <img height='40' src='images/cloud.png'></h1>" > README.md
+echo -e "<a href=""><img align="center" height='40' src="https://openweathermap.org/themes/openweathermap/assets/img/logo_white_cropped.png"></a>\n" REDME.md
+echo -e "<a href=""><img align="center" src="https://github.com/azrielbsi/weather/actions/workflows/weather.yml/badge.svg"> <img align="center" src="https://github.com/Julius-Ulee/github-profile-views-counter/blob/master/svg/736731255/badge.svg"> <img align="center" src="https://github.com/Julius-Ulee/github-profile-views-counter/blob/master/graph/736731255/small/week.png"></a>" README.md
 echo -e "<h3 align='center'>🕒 Indonesian Time(UTC$(printf "%+.2f" "$(bc <<< "scale=2; $timezone / 3600")")): <u>$time</u> (🤖Automated)</h3>\n" >> README.md
 echo -e "<table align='center'>" >> README.md
 echo -e "<tr>" >> README.md
@@ -154,10 +156,6 @@ done
 
 echo -e "</tr>" >> README.md
 echo -e "</table>" >> README.md
-
-echo -e "<a href=""><img align="center" src="https://openweathermap.org/themes/openweathermap/assets/img/logo_white_cropped.png"></a>\n" REDME.md
-echo -e "<a href=""><img align="center" src="https://github.com/azrielbsi/weather/actions/workflows/weather.yml/badge.svg"> <img align="center" src="https://github.com/Julius-Ulee/github-profile-views-counter/blob/master/svg/736731255/badge.svg"> <img align="center" src="https://github.com/Julius-Ulee/github-profile-views-counter/blob/master/graph/736731255/small/week.png"></a>" README.md
-
 echo -e "<h2>📄 License</h2>" >> README.md
 echo -e "<li>Powered by: <a href="https://github.com/azrielbsi/weather">Daily-Weather-Report</a></li>" >> README.md
 echo -e "<li><a href="https://github.com/azrielbsi/weather/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-MIT-yellow.svg"></a></li>" >> README.md
